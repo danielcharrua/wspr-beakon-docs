@@ -42,7 +42,7 @@ Configure Arduino IDE with the following settings:
 
 ### Library Installation
 
-1. Extract all ZIP files from the `lib/` folder
+1. Download all library ZIP files from the [GitHub repository lib/ folder](https://github.com/danielcharrua/wspr-beakon/tree/main/lib)
 2. Copy the extracted folders to your Arduino libraries directory:
    - Windows: `Documents\Arduino\libraries\`
    - macOS: `~/Documents/Arduino/libraries/`
@@ -50,13 +50,13 @@ Configure Arduino IDE with the following settings:
 
 **Required libraries:**
 
-- [Etherkit Si5351 (v2.1.4)](lib/Etherkit_Si5351-2.1.4.zip)
-- [JTEncode (v1.2.0)](lib/JTEncode-1.2.0.zip)
-- [LiquidCrystal I2C (v1.1.4)](lib/LiquidCrystal_I2C-1.1.4.zip)
-- [NTPClient (v3.1.0)](lib/NTPClient-3.1.0.zip)
-- [RotaryEncoder (v1.5.2)](lib/RotaryEncoder-1.5.2.zip)
-- [Time (v1.5)](lib/Time-1.5.zip)
-- [TinyGPSPlus (v1.1.0)](lib/TinyGPSPlus-1.1.0.zip)
+- [Etherkit Si5351 (v2.1.4)](https://github.com/danielcharrua/wspr-beakon/raw/main/lib/Etherkit_Si5351-2.1.4.zip)
+- [JTEncode (v1.2.0)](https://github.com/danielcharrua/wspr-beakon/raw/main/lib/JTEncode-1.2.0.zip)
+- [LiquidCrystal I2C (v1.1.4)](https://github.com/danielcharrua/wspr-beakon/raw/main/lib/LiquidCrystal_I2C-1.1.4.zip)
+- [NTPClient (v3.1.0)](https://github.com/danielcharrua/wspr-beakon/raw/main/lib/NTPClient-3.1.0.zip)
+- [RotaryEncoder (v1.5.2)](https://github.com/danielcharrua/wspr-beakon/raw/main/lib/RotaryEncoder-1.5.2.zip)
+- [Time (v1.5)](https://github.com/danielcharrua/wspr-beakon/raw/main/lib/Time-1.5.zip)
+- [TinyGPSPlus (v1.1.0)](https://github.com/danielcharrua/wspr-beakon/raw/main/lib/TinyGPSPlus-1.1.0.zip)
 
 ### Firmware Upload
 
