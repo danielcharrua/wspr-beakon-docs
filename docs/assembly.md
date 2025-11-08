@@ -231,8 +231,63 @@ This area of the board should look approximately like this:
   <img src="/img/wspr-beakon-pcb-ext-filters.webp" alt="12v mod" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
-## Next Steps
+## 3D Case Assembly
 
-With the hardware assembly complete, your WSPR Beakon is ready for initial testing and firmware installation. Refer to the technical documentation included with the project for programming and configuration instructions.
+With the PCB assembly complete, it's time to install everything in the 3D printed case.
 
-//TODO assembly of 3D case
+### 25. Insert Installation
+
+- Install the threaded inserts (M3) in the designated holes of the case
+- Use a soldering iron to heat the inserts and press them into the plastic until they are flush with the surface
+- Allow to cool completely before proceeding
+
+### 26. PCB Base Mounting
+
+- Secure the main PCB to the case base using M3 screws
+- Ensure the PCB sits flat and all mounting holes align properly
+- Do not overtighten the screws to avoid cracking the plastic
+
+### 27. Front Panel Assembly
+
+- Mount the LCD display in the front panel opening
+- Install the rotary encoder (HW-040) in its designated position
+- Secure both components with their respective nuts and washers
+
+### 28. Rear Panel Assembly
+
+- Install the SMA connector (SO-239) in the rear panel
+- Ensure the connector is properly seated and tightened
+
+### 29. RF Connection
+
+- Connect the RF output from the PCB to the rear SMA connector using RG-316 coaxial cable
+- Solder connections carefully, ensuring good RF continuity
+- Keep cable length as short as practical to minimize losses
+
+### 30. Wiring Verification
+
+- Double-check all connections from the encoder to the PCB
+- Verify LCD connections match the pin assignments
+- Ensure all Dupont cables are properly seated and secure
+
+### 31. Final Case Assembly
+
+- Carefully position the front panel with LCD and encoder
+- Route all cables neatly inside the case to avoid pinching
+- Secure the front panel to the base using M3 screws
+- Install the rear panel and secure with M3 screws
+- Perform a final visual inspection of all connections
+
+<div style={{textAlign: 'center', marginBottom: '20px'}}>
+  <img src="/img/wspr-beakon-core.webp" alt="Assembled WSPR Beakon" style={{maxWidth: '600px', width: '100%'}} />
+</div>
+
+## Assembly Complete
+
+Your WSPR Beakon is now fully assembled and ready for firmware installation and testing. The next step is to proceed with software configuration and initial testing.
+
+:::tip Assembly Tips
+- Take photos during disassembly for reference if you need to make modifications later
+- Label cables if you have multiple similar connections
+- Test the unit before final case closure to ensure everything works properly
+:::
