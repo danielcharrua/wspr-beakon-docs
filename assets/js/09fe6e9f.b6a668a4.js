@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkwspr_beakon_docs=globalThis.webpackChunkwspr_beakon_docs||[]).push([[5283],{2669:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/wspr-beakon-docs/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":4,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

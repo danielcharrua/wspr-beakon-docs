@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkwspr_beakon_docs=globalThis.webpackChunkwspr_beakon_docs||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/wspr-beakon-docs/blog","blogTitle":"Blog","authorsListPath":"/wspr-beakon-docs/blog/authors"}')}}]);
