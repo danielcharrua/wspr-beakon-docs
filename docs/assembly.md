@@ -13,7 +13,7 @@ This guide provides step-by-step instructions for assembling components on the m
 ## Main PCB Component Assembly
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-pcb-front-modules.webp" alt="Modules assembly" style={{maxWidth: '800px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb-front-modules.webp').default} alt="Modules assembly" style={{maxWidth: '800px', width: '100%'}} />
 </div>
 
 When assembling the various components on the main board, it is recommended to follow this order:
@@ -44,14 +44,14 @@ When assembling the various components on the main board, it is recommended to f
 Once the pins are soldered on the Si5351 module, solder 3 resistors of 100 ohms and 1 watt, in parallel, on the pins marked as "VIN" and "GND". These resistors will be 1 or 2 millimeters above the board components to act as a "heater" for them and thus minimize frequency drift of the module.
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-si5351-stability-1.webp" alt="RF module with heating resistors" style={{maxWidth: '500px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-si5351-stability-1.webp').default} alt="RF module with heating resistors" style={{maxWidth: '500px', width: '100%'}} />
 </div>
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginTop: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-si5351-stability-2.webp" alt="RF module with heating resistors" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-si5351-stability-2.webp').default} alt="RF module with heating resistors" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-si5351-stability-3.webp" alt="RF module with heating resistors" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-si5351-stability-3.webp').default} alt="RF module with heating resistors" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 
@@ -61,14 +61,14 @@ If you want to further improve frequency drift, you can prepare a small box for 
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-si5351-stability-4.webp" alt="RF module enclosure" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-si5351-stability-4.webp').default} alt="RF module enclosure" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-si5351-stability-5.webp" alt="RF module enclosure" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-si5351-stability-5.webp').default} alt="RF module enclosure" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 <div style={{textAlign: 'center', marginTop: '20px'}}>
-  <img src="/img/wspr-beakon-si5351-stability-6.webp" alt="RF module enclosure" style={{maxWidth: '500px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-si5351-stability-6.webp').default} alt="RF module enclosure" style={{maxWidth: '500px', width: '100%'}} />
 </div>
 
 ### Frequency Drift Verification
@@ -107,10 +107,10 @@ The board should now look approximately like this:
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-pcb-base-partial.webp" alt="Basic assembly" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-pcb-base-partial.webp').default} alt="Basic assembly" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-pcb-base.webp" alt="Basic assembly" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-pcb-base.webp').default} alt="Basic assembly" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 
@@ -132,14 +132,14 @@ The GPS board comes with pins protruding parallel to the board, and they must be
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-gps-module-mod-1.webp" alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-gps-module-mod-1.webp').default} alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-gps-module-mod-2.webp" alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-gps-module-mod-2.webp').default} alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 <div style={{textAlign: 'center', marginTop: '20px'}}>
-  <img src="/img/wspr-beakon-gps-module-mod-3.webp" alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-gps-module-mod-3.webp').default} alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
 </div>
 
 ### 14. GPS Pin Trimming
@@ -154,10 +154,10 @@ This area of the board should look approximately like this:
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-gps-module-mod-4.webp" alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-gps-module-mod-4.webp').default} alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-pcb-gps.webp" alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-pcb-gps.webp').default} alt="GPS module mod" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 
@@ -179,10 +179,10 @@ If you want to upgrade the board with "Enhancement 2" (12V external power), foll
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-pcb-12v-1.webp" alt="12v mod" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-pcb-12v-1.webp').default} alt="12v mod" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-pcb-12v-2.webp" alt="12v mod" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-pcb-12v-2.webp').default} alt="12v mod" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 
@@ -198,7 +198,7 @@ If you want to upgrade the board with "Enhancement 2" (12V external power), foll
 This area of the board should look approximately like this:
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-pcb-12v.webp" alt="12v mod" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb-12v.webp').default} alt="12v mod" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ## Enhancement 3: External Relay Control
@@ -228,7 +228,7 @@ For this part to work, it is necessary to have previously implemented "Enhanceme
 This area of the board should look approximately like this:
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-pcb-ext-filters.webp" alt="12v mod" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb-ext-filters.webp').default} alt="12v mod" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ## 3D Case Assembly
@@ -279,7 +279,7 @@ With the PCB assembly complete, it's time to install everything in the 3D printe
 - Perform a final visual inspection of all connections
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-core.webp" alt="Assembled WSPR Beakon" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-core.webp').default} alt="Assembled WSPR Beakon" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ## Assembly Complete

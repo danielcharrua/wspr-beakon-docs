@@ -37,7 +37,7 @@ Configure Arduino IDE with the following settings:
 - Programmer: Esptool
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-arduino-esp32-devkit-c-v4-config.png" alt="Arduino ESP32 Configuration" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-arduino-esp32-devkit-c-v4-config.png').default} alt="Arduino ESP32 Configuration" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ### Library Installation

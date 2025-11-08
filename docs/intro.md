@@ -25,7 +25,7 @@ For more information about WSPR, you can visit: [https://en.wikipedia.org/wiki/W
 The proposed assembly is designed to transmit on HF, MF, and LF bands. The WSPR Beakon is designed with a **modular approach** that allows implementing different configurations according to user needs, from a basic version to a fully equipped system.
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-pcb.webp" alt="WSPR Beakon PCB" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb.webp').default} alt="WSPR Beakon PCB" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ### Key Features

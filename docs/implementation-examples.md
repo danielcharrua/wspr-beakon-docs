@@ -17,7 +17,7 @@ The core WSPR Beakon system with GPS synchronization represents the fundamental 
 ### Basic PCB Assembly
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
-  <img src="/img/wspr-beakon-pcb.webp" alt="WSPR Beakon - Core with case" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb.webp').default} alt="WSPR Beakon - Core with case" style={{maxWidth: '600px', width: '100%'}} />
   <p style={{fontSize: '14px', color: '#666', marginTop: '10px', fontStyle: 'italic'}}>
     Core PCB assembly showing all available enhancement modules installed
   </p>
@@ -26,33 +26,33 @@ The core WSPR Beakon system with GPS synchronization represents the fundamental 
 ### 3D Printed Enclosure Option
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
-  <img src="/img/wspr-beakon-core-7.webp" alt="WSPR Beakon - Core with case" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-core-7.webp').default} alt="WSPR Beakon - Core with case" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-core-5.webp" alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-core-5.webp').default} alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-core-6.webp" alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
-  </div>
-</div>
-
-<div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
-  <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-core-1.webp" alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
-  </div>
-  <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-core-2.webp" alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-core-6.webp').default} alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
   </div>
 </div>
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-core.webp" alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-core-1.webp').default} alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-core-4.webp" alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-core-2.webp').default} alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
+  </div>
+</div>
+
+<div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
+  <div style={{textAlign: 'center', flex: 1}}>
+    <img src={require('@site/static/img/wspr-beakon-core.webp').default} alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
+  </div>
+  <div style={{textAlign: 'center', flex: 1}}>
+    <img src={require('@site/static/img/wspr-beakon-core-4.webp').default} alt="WSPR Beakon - Core with case" style={{maxWidth: '400px', width: '100%'}} />
   </div>
 </div>
 
@@ -68,29 +68,29 @@ The core WSPR Beakon system with GPS synchronization represents the fundamental 
 This implementation demonstrates how easily the basic design can be enhanced with an RF amplifier for increased output power. This example operates in single-band configuration and showcases the project's modularity without requiring a formal enclosure.
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
-  <img src="/img/wspr-beakon-mad-max.webp" alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-mad-max.webp').default} alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-mad-max-1.webp" alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-mad-max-1.webp').default} alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '400px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-mad-max-2.webp" alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-mad-max-2.webp').default} alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '400px', width: '100%'}} />
   </div>
 </div>
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-mad-max-3.webp" alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-mad-max-3.webp').default} alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '400px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-mad-max-4.webp" alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-mad-max-4.webp').default} alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '400px', width: '100%'}} />
   </div>
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
-  <img src="/img/wspr-beakon-mad-max-5.webp" alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-mad-max-5.webp').default} alt="WSPR Beakon - Mad Max Version" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 **Features:**
@@ -105,33 +105,33 @@ This implementation demonstrates how easily the basic design can be enhanced wit
 This implementation represents the most complete version, featuring automatic filter bank selection and integrated amplification. The system operates from 12V supply and includes sophisticated relay control for seamless band switching.
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
-  <img src="/img/wspr-beakon-enhanced-unit.webp" alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-enhanced-unit.webp').default} alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-enhanced-unit-1.webp" alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-enhanced-unit-1.webp').default} alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-enhanced-unit-2.webp" alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
-  </div>
-</div>
-
-<div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
-  <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-enhanced-unit-3.webp" alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
-  </div>
-  <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-enhanced-unit-4.webp" alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-enhanced-unit-2.webp').default} alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
   </div>
 </div>
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-enhanced-unit-5.webp" alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-enhanced-unit-3.webp').default} alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-enhanced-unit-6.webp" alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-enhanced-unit-4.webp').default} alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
+  </div>
+</div>
+
+<div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
+  <div style={{textAlign: 'center', flex: 1}}>
+    <img src={require('@site/static/img/wspr-beakon-enhanced-unit-5.webp').default} alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
+  </div>
+  <div style={{textAlign: 'center', flex: 1}}>
+    <img src={require('@site/static/img/wspr-beakon-enhanced-unit-6.webp').default} alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '400px', width: '100%'}} />
   </div>
 </div>
 

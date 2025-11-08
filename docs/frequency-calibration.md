@@ -79,19 +79,19 @@ If using antennas for both transceiver and assembly (best option for signal iden
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-signals-example.webp" alt="Correct WSPR signals within 1400-1600 Hz band" style={{maxWidth: '300px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-signals-example.webp').default} alt="Correct WSPR signals within 1400-1600 Hz band" style={{maxWidth: '300px', width: '100%'}} />
     <p style={{fontSize: '14px', color: '#666', marginTop: '10px', fontStyle: 'italic'}}>
       WSPR signals within the correct passband, between 1400 and 1600 Hz
     </p>
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-signals-incorrect.webp" alt="Incorrect WSPR signal outside passband" style={{maxWidth: '300px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-signals-incorrect.webp').default} alt="Incorrect WSPR signal outside passband" style={{maxWidth: '300px', width: '100%'}} />
     <p style={{fontSize: '14px', color: '#666', marginTop: '10px', fontStyle: 'italic'}}>
       WSPR signal outside the correct passband. This signal will never be decoded
     </p>
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-signals-correct.webp" alt="Correct WSPR signal" style={{maxWidth: '300px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-signals-correct.webp').default} alt="Correct WSPR signal" style={{maxWidth: '300px', width: '100%'}} />
     <p style={{fontSize: '14px', color: '#666', marginTop: '10px', fontStyle: 'italic'}}>
       WSPR signal within the correct passband
     </p>

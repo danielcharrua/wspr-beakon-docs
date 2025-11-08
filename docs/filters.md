@@ -175,55 +175,55 @@ The position of each component on the different filter boards is as follows:
     <tr>
       <td><strong>10M</strong></td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-10m-t.webp" alt="10M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-10m-t.webp').default} alt="10M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-10m-b.webp" alt="10M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-10m-b.webp').default} alt="10M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
     </tr>
     <tr>
       <td><strong>15M</strong></td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-15m-t.webp" alt="15M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-15m-t.webp').default} alt="15M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-15m-b.webp" alt="15M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-15m-b.webp').default} alt="15M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
     </tr>
     <tr>
       <td><strong>20M</strong></td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-20m-t.webp" alt="20M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-20m-t.webp').default} alt="20M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-20m-b.webp" alt="20M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-20m-b.webp').default} alt="20M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
     </tr>
     <tr>
       <td><strong>40M</strong></td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-40m-t.webp" alt="40M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-40m-t.webp').default} alt="40M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-40m-b.webp" alt="40M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-40m-b.webp').default} alt="40M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
     </tr>
     <tr>
       <td><strong>80M</strong></td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-80m-t.webp" alt="80M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-80m-t.webp').default} alt="80M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-80m-b.webp" alt="80M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-80m-b.webp').default} alt="80M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
     </tr>
     <tr>
       <td><strong>160M</strong></td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-160m-t.webp" alt="160M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-160m-t.webp').default} alt="160M Filter - Top Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
       <td style={{textAlign: 'center'}}>
-        <img src="/img/wspr-beakon-filters-160m-b.webp" alt="160M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
+        <img src={require('@site/static/img/wspr-beakon-filters-160m-b.webp').default} alt="160M Filter - Bottom Side" style={{maxWidth: '300px', width: '100%'}} />
       </td>
     </tr>
   </tbody>
@@ -365,7 +365,7 @@ For greater clarity of assembly, the usual identification of the different compo
 The proposed PCB, for which a Gerber file link is provided for downloading and ordering manufacturing ([see the BOM table at the bottom](/docs/bill-of-materials#detailed-table-of-base-components)), consists of 10 mini boards (which must be cut with a saw) for 10 possible filters. The design took into account that it should be a very versatile board and could contain 5 or 7-pole filters, even with some "notch" associated with a specific frequency. The chosen format is for "Manhattan" style construction (components soldered on "islands") due to the enormous flexibility of design and type of component that can be used.
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-filter-pcb.webp" alt="filters PCBs" style={{maxWidth: '450px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-filter-pcb.webp').default} alt="filters PCBs" style={{maxWidth: '450px', width: '100%'}} />
 </div>
 
 ## Filter Installation and Connection
@@ -380,19 +380,19 @@ Filter boards are connected to the main assembly board via insertable pins, maki
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-pcb-filters-1.webp" alt="Filter Installation and Connection" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-pcb-filters-1.webp').default} alt="Filter Installation and Connection" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-pcb-filters-2.webp" alt="Filter Installation and Connection" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-pcb-filters-2.webp').default} alt="Filter Installation and Connection" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-pcb-filters-3.webp" alt="Filter Installation and Connection" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-pcb-filters-3.webp').default} alt="Filter Installation and Connection" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-pcb-filters.webp" alt="Filter Installation and Connection" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-pcb-filters.webp').default} alt="Filter Installation and Connection" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 
@@ -401,7 +401,7 @@ Filter boards are connected to the main assembly board via insertable pins, maki
 Although the filter boards were initially designed to be used in this project and connected via pin strips, the arrangement of the "ground" and "RF" tracks allows for soldering SMA connectors for 1.6mm circuit boards (which require cutting two of their four "ground" pins) and thus be able to use them in any other project that requires this type of connectors.
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-filter-calibration-1.webp" alt="Filter calibration" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-filter-calibration-1.webp').default} alt="Filter calibration" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ## Filter Testing and Verification
@@ -411,14 +411,14 @@ Although the filter boards were initially designed to be used in this project an
 To proceed with filter adjustment and verification (**MANDATORY**), they must be connected to measuring equipment, such as a nanoVNA. For this we can prepare a pair of "transitions" from pin connector to SMA (taking care that the pins of the "live" of the SMA connector are then placed in those corresponding to the "IN" and "OUT" of the filter board):
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-filter-calibration-2.webp" alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-filter-calibration-2.webp').default} alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
 </div>
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginTop: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-filter-calibration-3.webp" alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-filter-calibration-3.webp').default} alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-filter-calibration-4.webp" alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-filter-calibration-4.webp').default} alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 ### Alternative Testing Method
@@ -427,10 +427,10 @@ Another option is to use a pair of female SMA connectors that can be located on 
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-filter-calibration-5.webp" alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-filter-calibration-5.webp').default} alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
   </div>
   <div style={{textAlign: 'center', flex: 1}}>
-    <img src="/img/wspr-beakon-filter-calibration-6.webp" alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
+    <img src={require('@site/static/img/wspr-beakon-filter-calibration-6.webp').default} alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
 
@@ -443,14 +443,14 @@ If this last connection option to the measuring equipment is going to be used, i
 The graphs we will obtain in the measuring equipment, depending on the type of filter used, should be similar to the following examples:
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
-  <img src="/img/wspr-beakon-filter-calibration-160m.jpg" alt="Filter Response 160m" style={{maxWidth: '700px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-filter-calibration-160m.jpg').default} alt="Filter Response 160m" style={{maxWidth: '700px', width: '100%'}} />
   <p style={{fontSize: '14px', color: '#666', marginTop: '10px', fontStyle: 'italic'}}>
     160 meter filter with a notch at the second harmonic (3.6 MHz) to improve its attenuation
   </p>
 </div>
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
-  <img src="/img/wspr-beakon-filter-calibration-15m.jpg" alt="Filter Response 15m" style={{maxWidth: '700px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-filter-calibration-15m.jpg').default} alt="Filter Response 15m" style={{maxWidth: '700px', width: '100%'}} />
   <p style={{fontSize: '14px', color: '#666', marginTop: '10px', fontStyle: 'italic'}}>
     15 meter filter with a notch at the second harmonic (42.3 MHz) to improve its attenuation
   </p>

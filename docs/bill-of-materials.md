@@ -16,82 +16,82 @@ The WSPR Beakon is designed as a modular system with different configuration fla
 The most basic version is powered from the USB connector of the ESP32 module and contains everything essential to operate the transmitter. For this basic version, the following elements are needed:
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-pcb-base.webp" alt="WSPR Beakon PCB Base" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb-base.webp').default} alt="WSPR Beakon PCB Base" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ### Visual Identification of Base Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-pcb.webp" alt="Main PCB" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-pcb.webp').default} alt="Main PCB" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Main PCB</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-esp32.webp" alt="ESP32 Dev Kit C V4" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-esp32.webp').default} alt="ESP32 Dev Kit C V4" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>ESP32 Dev Kit C V4</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-si5351.webp" alt="Si5351 RF Module" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-si5351.webp').default} alt="Si5351 RF Module" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Si5351 RF Module</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-encoder-hw40.webp" alt="Rotary Encoder HW-40" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-encoder-hw40.webp').default} alt="Rotary Encoder HW-40" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Rotary Encoder HW-40</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-lcd-1602-i2c.webp" alt="LCD Display 16x2 I2C" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-lcd-1602-i2c.webp').default} alt="LCD Display 16x2 I2C" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>LCD Display 16x2 I2C</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-ceramic-capacitor.webp" alt="Ceramic Capacitor" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-ceramic-capacitor.webp').default} alt="Ceramic Capacitor" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Ceramic Capacitor</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-electrolitic-capacitor.webp" alt="Electrolytic Capacitor" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-electrolitic-capacitor.webp').default} alt="Electrolytic Capacitor" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Electrolytic Capacitor</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-resistor.webp" alt="Resistors 100Ω" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-resistor.webp').default} alt="Resistors 100Ω" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Resistors 100Ω</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-dupont-cable-fem-fem.webp" alt="Dupont Cables" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-dupont-cable-fem-fem.webp').default} alt="Dupont Cables" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Dupont Cables</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-fem-4-pin.webp" alt="4-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-4-pin.webp').default} alt="4-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>4-pin Female Socket</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-fem-7-pin.webp" alt="7-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-7-pin.webp').default} alt="7-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>7-pin Female Socket</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-fem-19-pin.webp" alt="19-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-19-pin.webp').default} alt="19-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>19-pin Female Socket</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-male-4-pin.webp" alt="4-pin Male Header" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-male-4-pin.webp').default} alt="4-pin Male Header" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>2.54 Male Header</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-screw-separators.webp" alt="Metal Standoffs" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-screw-separators.webp').default} alt="Metal Standoffs" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Metal Standoffs</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-screws.webp" alt="Screws M2.5" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-screws.webp').default} alt="Screws M2.5" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Screws M2.5</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-filter-pcbs.webp" alt="Filter PCB" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-filter-pcbs.webp').default} alt="Filter PCB" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Filter PCB</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-axial-inductor.webp" alt="Filter Inductors" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-axial-inductor.webp').default} alt="Filter Inductors" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Filter Inductors</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-ceramic-capacitor-1.webp" alt="Filter Capacitors" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-ceramic-capacitor-1.webp').default} alt="Filter Capacitors" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Filter Capacitors</div>
   </div>
 </div>
@@ -129,26 +129,26 @@ The filter inductors and capacitors values depend on the specific amateur radio 
 With this upgrade we provide the capability to not depend on a WiFi network for precise time synchronization of the assembly, as a GPS module is added that has an integrated antenna, in addition to an SMA-type input for an external antenna. If you want to use it with the integrated antenna, obviously the box where the assembly is located cannot be metallic. For this enhancement, the following elements need to be added:
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-pcb-gps.webp" alt="WSPR Beakon PCB GPS" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb-gps.webp').default} alt="WSPR Beakon PCB GPS" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ### Visual Identification of Enhancement 1 Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-gps-neo-7m.webp" alt="GPS Module NEO-7M" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-gps-neo-7m.webp').default} alt="GPS Module NEO-7M" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>GPS Module NEO-7M</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-fem-5-pin.webp" alt="5-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-5-pin.webp').default} alt="5-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>5-pin Female Socket</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-screw-separators.webp" alt="Metal Standoffs" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-screw-separators.webp').default} alt="Metal Standoffs" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Metal Standoffs</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-screws.webp" alt="Screws M2.5" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-screws.webp').default} alt="Screws M2.5" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Screws M2.5</div>
   </div>
 </div>
@@ -167,30 +167,30 @@ With this upgrade we provide the capability to not depend on a WiFi network for 
 With this upgrade we provide the capability to power the circuit at 12 (or 13.8) volts, such as with one of the power supplies normally found in the radio room. For this enhancement, the following elements need to be added:
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-pcb-12v.webp" alt="WSPR Beakon PCB 12V" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb-12v.webp').default} alt="WSPR Beakon PCB 12V" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ### Visual Identification of Enhancement 2 Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-diode.webp" alt="Diode 1N5819" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-diode.webp').default} alt="Diode 1N5819" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Diode 1N5819</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-buck-converter.webp" alt="Buck DC-DC Converter" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-buck-converter.webp').default} alt="Buck DC-DC Converter" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Buck DC-DC Converter</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-dupont-cable-fem-fem.webp" alt="Dupont Cables" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-dupont-cable-fem-fem.webp').default} alt="Dupont Cables" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Dupont Cables</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-fem-4-pin.webp" alt="4-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-4-pin.webp').default} alt="4-pin Female Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>4-pin Female Sockets</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-male-pin.webp" alt="2-pin Male Header Strip" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-male-pin.webp').default} alt="2-pin Male Header Strip" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>2.54 Male Header Strip</div>
   </div>
 </div>
@@ -211,26 +211,26 @@ With this upgrade we provide the capability to power the circuit at 12 (or 13.8)
 To enable this enhancement, we must have previously implemented enhancement number 2. With this improvement we incorporate seven relay outputs (high level, 12 volts) configurable according to the working band (pins marked as 12, 14, 27, 26, 25, 33 and 32), and an eighth relay output (pin marked as 13) controlled by the TX periods of the circuit and which is "sequenced" to avoid switching with RF (it goes high level, 12 volts, half a second before going to TX and goes low level half a second after TX ceases). For this enhancement, the following elements need to be added:
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src="/img/wspr-beakon-pcb-ext-filters.webp" alt="WSPR Beakon PCB Filter" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb-ext-filters.webp').default} alt="WSPR Beakon PCB Filter" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ### Visual Identification of Enhancement 3 Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-udn2981.webp" alt="UDN2981 IC" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-udn2981.webp').default} alt="UDN2981 IC" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>UDN2981 IC</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-ic-socket-18pin.webp" alt="18-pin IC Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-ic-socket-18pin.webp').default} alt="18-pin IC Socket" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>18-pin IC Socket</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-dupont-cable-fem-fem.webp" alt="Dupont Cables" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-dupont-cable-fem-fem.webp').default} alt="Dupont Cables" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Dupont Cables</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-male-pin.webp" alt="2.54 Male Header Strip" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-male-pin.webp').default} alt="2.54 Male Header Strip" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>8-pin Male Header Strip</div>
   </div>
 </div>
@@ -267,43 +267,43 @@ The filters described later have been used for days at 500 milliwatt output regi
 A custom 3D printed enclosure is available for the basic WSPR Beakon core system. This enclosure provides professional appearance and protection while maintaining easy access to all controls and connections.
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
-  <img src="/img/wspr-beakon-core-7.webp" alt="WSPR Beakon - Core with case" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-core-7.webp').default} alt="WSPR Beakon - Core with case" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
 ### Visual Identification of 3D Case Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-3d-case.webp" alt="3D Printed Case" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-3d-case.webp').default} alt="3D Printed Case" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>3D Printed Case</div>
     <div style={{fontSize: '13px', color: '#666'}}>STL files available</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-insert.webp" alt="Threaded Inserts M2.5" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-insert.webp').default} alt="Threaded Inserts M2.5" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Threaded Inserts M2.5</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-so-239.webp" alt="SO-239 Connector" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-so-239.webp').default} alt="SO-239 Connector" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>SO-239 Connector</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-rg-316.webp" alt="Coaxial Cable" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-rg-316.webp').default} alt="Coaxial Cable" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Coaxial Cable</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-screws.webp" alt="M2.5 x 5mm Screws" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-screws.webp').default} alt="M2.5 x 5mm Screws" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>M2.5 x 5mm Screws</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-screws-m3.webp" alt="M3 x 8mm Screws" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-screws-m3.webp').default} alt="M3 x 8mm Screws" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>M3 x 8mm Screws</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-nuts-m3.webp" alt="M3 Nuts" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-nuts-m3.webp').default} alt="M3 Nuts" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>M3 Nuts</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src="/img/parts/wspr-beakon-ground-terminal.webp" alt="Ground Terminal" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <img src={require('@site/static/img/parts/wspr-beakon-ground-terminal.webp').default} alt="Ground Terminal" style={{maxWidth: '120px', marginBottom: '8px'}} />
     <div style={{fontWeight: 'bold'}}>Ground Terminal</div>
   </div>
 </div>
