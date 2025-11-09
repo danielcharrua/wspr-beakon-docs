@@ -157,7 +157,7 @@ For easier adjustment of notch frequencies, consider using trimmer capacitors wi
 
 ## Component Sourcing
 
-Please see the [BOM table at the bottom](/docs/bill-of-materials#detailed-table-of-base-components).
+Please see the [BOM table at the bottom](/docs/bill-of-materials#detailed-table-of-core-components).
 
 ## Component Placement and PCB Layout
 
@@ -362,7 +362,7 @@ For greater clarity of assembly, the usual identification of the different compo
 
 ## Filter PCB Design and Construction
 
-The proposed PCB, for which a Gerber file link is provided for downloading and ordering manufacturing ([see the BOM table at the bottom](/docs/bill-of-materials#detailed-table-of-base-components)), consists of 10 mini boards (which must be cut with a saw) for 10 possible filters. The design took into account that it should be a very versatile board and could contain 5 or 7-pole filters, even with some "notch" associated with a specific frequency. The chosen format is for "Manhattan" style construction (components soldered on "islands") due to the enormous flexibility of design and type of component that can be used.
+The proposed PCB, for which a Gerber file link is provided for downloading and ordering manufacturing ([see the BOM table at the bottom](/docs/bill-of-materials#detailed-table-of-core-components)), consists of 10 mini boards (which must be cut with a saw) for 10 possible filters. The design took into account that it should be a very versatile board and could contain 5 or 7-pole filters, even with some "notch" associated with a specific frequency. The chosen format is for "Manhattan" style construction (components soldered on "islands") due to the enormous flexibility of design and type of component that can be used.
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
   <img src={require('@site/static/img/wspr-beakon-filter-pcb.webp').default} alt="filters PCBs" style={{maxWidth: '450px', width: '100%'}} />

@@ -10,16 +10,15 @@ For convenience, pre-selected component kits are available to simplify the build
 
 The WSPR Beakon is designed as a modular system with different configuration flavors to suit various needs and capabilities. Before beginning assembly, review the available flavors and select the components needed for your chosen configuration.
 
-
-## Base Configuration Components
+## Core Configuration Components
 
 The most basic version is powered from the USB connector of the ESP32 module and contains everything essential to operate the transmitter. For this basic version, the following elements are needed:
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
-  <img src={require('@site/static/img/wspr-beakon-pcb-base.webp').default} alt="WSPR Beakon PCB Base" style={{maxWidth: '600px', width: '100%'}} />
+  <img src={require('@site/static/img/wspr-beakon-pcb-base.webp').default} alt="WSPR Beakon PCB Core" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
-### Visual Identification of Base Components
+### Visual Identification of Core Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>
@@ -96,7 +95,7 @@ The most basic version is powered from the USB connector of the ESP32 module and
   </div>
 </div>
 
-### Detailed Table of Base Components
+### Detailed Table of Core Components
 
 | Component | Qty | Notes | Link |
 |-----------|-----|-------|------|
@@ -124,7 +123,7 @@ The most basic version is powered from the USB connector of the ESP32 module and
 The filter inductors and capacitors values depend on the specific amateur radio band you plan to use for WSPR transmission. Before purchasing these components, please refer to the technical documentation included with the project to determine the exact values needed for your chosen frequency band. See the section [Filter Design and Values](/docs/filters) for details.
 :::
 
-## Enhancement 1: GPS Module Components
+## Enhancement 1: GPS
 
 With this upgrade we provide the capability to not depend on a WiFi network for precise time synchronization of the assembly, as a GPS module is added that has an integrated antenna, in addition to an SMA-type input for an external antenna. If you want to use it with the integrated antenna, obviously the box where the assembly is located cannot be metallic. For this enhancement, the following elements need to be added:
 
@@ -132,7 +131,7 @@ With this upgrade we provide the capability to not depend on a WiFi network for 
   <img src={require('@site/static/img/wspr-beakon-pcb-gps.webp').default} alt="WSPR Beakon PCB GPS" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
-### Visual Identification of Enhancement 1 Components
+### Visual Identification of GPS Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>
@@ -153,7 +152,7 @@ With this upgrade we provide the capability to not depend on a WiFi network for 
   </div>
 </div>
 
-### Detailed Table of Enhancement 1 Components
+### Detailed Table of GPS Components
 
 | Component | Qty | Notes | Link |
 |-----------|-----|-------|------|
@@ -162,7 +161,7 @@ With this upgrade we provide the capability to not depend on a WiFi network for 
 | **Metal Standoffs** | 2 | M2.5 x 11mm female-female, for securing main board to case and RF module board over main board | [AliExpress](https://es.aliexpress.com/item/1005001478301407.html) |
 | **Screws** | 4 | M2.5 x 5mm for metal standoffs | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
 
-## Enhancement 2: 12V Power Supply Components
+## Enhancement 2: 12V Power Supply
 
 With this upgrade we provide the capability to power the circuit at 12 (or 13.8) volts, such as with one of the power supplies normally found in the radio room. For this enhancement, the following elements need to be added:
 
@@ -170,7 +169,7 @@ With this upgrade we provide the capability to power the circuit at 12 (or 13.8)
   <img src={require('@site/static/img/wspr-beakon-pcb-12v.webp').default} alt="WSPR Beakon PCB 12V" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
-### Visual Identification of Enhancement 2 Components
+### Visual Identification of 12V Power Supply Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>
@@ -195,7 +194,7 @@ With this upgrade we provide the capability to power the circuit at 12 (or 13.8)
   </div>
 </div>
 
-### Detailed Table of Enhancement 2 Components
+### Detailed Table of 12V Power Supply Components
 
 | Component | Qty | Notes | Link |
 |-----------|-----|-------|------|
@@ -206,7 +205,7 @@ With this upgrade we provide the capability to power the circuit at 12 (or 13.8)
 | **1-pin Male Headers** | 4 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **2-pin Male Header Strip** | 1 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 
-## Enhancement 3: External Filter Bank Components
+## Enhancement 3: External Filter Bank
 
 To enable this enhancement, we must have previously implemented enhancement number 2. With this improvement we incorporate seven relay outputs (high level, 12 volts) configurable according to the working band (pins marked as 12, 14, 27, 26, 25, 33 and 32), and an eighth relay output (pin marked as 13) controlled by the TX periods of the circuit and which is "sequenced" to avoid switching with RF (it goes high level, 12 volts, half a second before going to TX and goes low level half a second after TX ceases). For this enhancement, the following elements need to be added:
 
@@ -214,7 +213,7 @@ To enable this enhancement, we must have previously implemented enhancement numb
   <img src={require('@site/static/img/wspr-beakon-pcb-ext-filters.webp').default} alt="WSPR Beakon PCB Filter" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
-### Visual Identification of Enhancement 3 Components
+### Visual Identification of External Filter Bank Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>
@@ -235,7 +234,7 @@ To enable this enhancement, we must have previously implemented enhancement numb
   </div>
 </div>
 
-### Detailed Table of Enhancement 3 Components
+### Detailed Table of External Filter Bank Components
 
 | Component | Qty | Notes | Link |
 |-----------|-----|-------|------|
