@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'WSPR Beakon Documentation',
   tagline: 'Complete guide for building and operating your WSPR Beakon',
-  favicon: 'img/favicon.ico', //TODO
+  favicon: 'img/favicon.svg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -69,6 +69,9 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/wspr-beacon/wspr-beacon-docs/tree/main/',
         },
+        blog: false,
+        /*  Uncomment to enable the blog
+         -------------
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -84,6 +87,7 @@ const config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+        ------------- */
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -95,8 +99,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      //TODO
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/wspr-beakon-pcb.webp',
       colorMode: {
         respectPrefersColorScheme: true,
       },
@@ -104,7 +107,7 @@ const config = {
         title: 'WSPR Beakon',
         logo: {
           alt: 'WSPR Beakon Logo',
-          src: 'img/logo.svg',
+          src: 'img/wspr-beakon-logo.svg',
         },
         items: [
           {
