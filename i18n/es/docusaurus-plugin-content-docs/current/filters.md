@@ -10,11 +10,11 @@ Esta sección cubre el diseño, construcción y ajuste de filtros para su sistem
 
 Dado que el funcionamiento se realizará a muy baja potencia, intentamos construir filtros con componentes comunes y económicos: inductores axiales (su apariencia es similar a resistencias con cuerpo verde) y condensadores normales de bajo voltaje (50 voltios). Creímos que evitar la necesidad de enrollar toroides y obtener condensadores de tipo NP0 de alta calidad (que obviamente es una mejor opción) haría que la construcción de estos filtros fuera más factible para una audiencia más amplia. Esto no impide que el mismo soporte (PCB) se use para construirlos con componentes de mayor calidad que los propuestos aquí.
 
-Se construyeron varias unidades de filtro para cada banda, verificando que en la mayoría de los casos son replicables sin modificaciones mayores; lógicamente esto dependerá de la tolerancia de los diferentes componentes y en algunos casos puede ser necesario un ajuste fino, generalmente variando el valor de algún condensador, y especialmente para centrar la frecuencia de trabajo de unidades que incorporan filtros de muesca; el ajuste de la frecuencia central de estos filtros de "muesca" es mucho más rápido y simple si se usa un trimmer de ajuste con un valor ligeramente superior al del condensador(es) fijo(s) correspondiente, que reemplazaría. Por tanto se recomienda su uso (ver la sección "Notas" en la tabla de componentes de filtros).
+Se construyeron varias unidades de filtro para cada banda, verificando que en la mayoría de los casos son replicables sin modificaciones mayores; lógicamente esto dependerá de la tolerancia de los diferentes componentes y en algunos casos puede ser necesario un ajuste fino, generalmente variando el valor de algún condensador, y especialmente para centrar la frecuencia de trabajo de unidades que incorporan filtros de “muesca”. El ajuste de la frecuencia central de estos filtros de "muesca" es mucho más rápido y simple si se usa un trimmer de ajuste con un valor ligeramente superior al del condensador(es) fijo(s) correspondiente, al que reemplazaría; por tanto se recomienda su uso (ver la sección "Notas" en la tabla de componentes de filtros).
 
 ## Requisitos de Prueba Obligatorios
 
-Debe enfatizarse que la tabla de componentes para cada filtro es solo un punto de partida, por lo que cada unidad construida debe ser **OBLIGATORIAMENTE VERIFICADA** individualmente con equipo de medición, por ejemplo un nanoVNA, para verificar que:
+Debe enfatizarse que la tabla de componentes para cada filtro es solo un punto de partida, por lo que cada unidad construida debe ser **OBLIGATORIAMENTE VERIFICADA** iindividualmente con equipo de medición, por ejemplo un nanoVNA, para asegurarnos de que:
 
 - El **segundo armónico** (doble frecuencia de la que se va a usar) esté a un nivel entre **35 y 40 dB por debajo** del nivel de la frecuencia de uso
 - El **tercer armónico** (triple frecuencia de la que se va a usar) esté entre **45 y 50 dB por debajo** del nivel de la frecuencia de uso
@@ -148,11 +148,11 @@ Los valores de componentes que se usarán como puntos de partida para la constru
 
 - **Inductores**: Inductores axiales con cuerpo verde (apariencia similar a resistencias)
 - **Condensadores**: Condensadores normales de bajo voltaje (clasificación de 50V)
-- **Trimmers**: Pueden ser sustituidos por condensadores específicos para permitir el ajuste fino de frecuencias de muesca
+- **Trimmers**: Pueden sustituir a los condensadores específicos para permitir un ajuste rápido y sencillo de la frecuencia de muesca
 - **Combinaciones serie/paralelo**: Algunos valores se logran combinando múltiples componentes
 
 :::info Recomendaciones de Trimmers
-Para un ajuste más fácil de las frecuencias de muesca, considere usar condensadores trimmer con valores ligeramente superiores a los condensadores fijos que reemplazan. Esto permite el centrado preciso de frecuencia durante las pruebas.
+Para un ajuste más fácil de las frecuencias de muesca, considere usar condensadores trimmer con valores ligeramente superiores a los condensadores fijos que reemplazan. Esto permite el centrado rápido y preciso de frecuencia durante las pruebas.
 :::
 
 ## Obtención de Componentes
@@ -362,7 +362,7 @@ Para mayor claridad de ensamblaje, se proporciona la identificación usual de lo
 
 ## Diseño y Construcción de PCB de Filtros
 
-La PCB propuesta, para la cual se proporciona un enlace de descarga de archivo Gerber para descargar y ordenar la fabricación ([ver la tabla de lista de materiales al final](/docs/bill-of-materials#tabla-detallada-de-componentes-principales)), consiste en 10 mini placas (que deben cortarse con sierra) para 10 posibles filtros. El diseño tuvo en cuenta que debería ser una placa muy versátil y podría contener filtros de 5 o 7 polos, incluso con algún "notch" asociado con una frecuencia específica. El formato elegido es para construcción estilo "Manhattan" (componentes soldados en "islas") debido a la enorme flexibilidad de diseño y tipo de componente que se puede usar.
+La PCB propuesta, para la cual se proporciona un enlace de descarga de archivo Gerber para poder encargar la fabricación ([ver la tabla de lista de materiales al final](/docs/bill-of-materials#tabla-detallada-de-componentes-principales)), consiste en 10 mini placas (que deben cortarse con sierra) para 10 posibles filtros. El diseño tuvo en cuenta que debería ser una placa muy versátil y podría contener filtros de 5 o 7 polos, incluso con algún "notch" asociado con una frecuencia específica. El formato elegido es para construcción estilo "Manhattan" (componentes soldados en "islas") debido a la enorme flexibilidad de diseño y tipo de componente que se puede usar.
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
   <img src={require('@site/static/img/wspr-beakon-filter-pcb.webp').default} alt="PCBs de filtros" style={{maxWidth: '450px', width: '100%'}} />
@@ -372,9 +372,9 @@ La PCB propuesta, para la cual se proporciona un enlace de descarga de archivo G
 
 Las placas de filtro se conectan a la placa principal de ensamblaje a través de pines insertables, haciéndolas muy fácilmente intercambiables. Una buena manera de asegurar que estos pines estén bien alineados al soldar y que las placas puedan ser fácilmente intercambiadas después es seguir estos pasos:
 
-1. **Instalación de Socket**: Suelde los dos sockets hembra de 4 pines en la placa principal, presionándolos contra la placa durante la soldadura para que estén correctamente asentados y formen 90 grados con respecto a la placa
+1. **Instalación de Socket**: Suelde los dos zócalos hembra de 4 pines en la placa principal, presionándolos contra la placa durante la soldadura para que estén correctamente asentados y formen 90 grados con respecto a la placa
 
-2. **Inserción de Pines**: Inserte las dos tiras de pines macho de 4 pines, a través de su lado largo, en los sockets hembra ya soldados
+2. **Inserción de Pines**: Inserte las dos tiras de pines macho de 4 pines, a través de su lado largo, en los zócalos hembra ya soldados
 
 3. **Montaje de Placa de Filtro**: Coloque la placa de filtro sobre las tiras de pines macho (cuidado: verifique que la serigrafía "IN" y "OUT" de la placa de filtro mire hacia arriba y coincida con la serigrafía "RFIN" y "RFOUT" de la placa principal), asegurándose de que se asiente correctamente y proceda a soldar los ocho pines macho a la placa de filtro
 
@@ -396,7 +396,7 @@ Las placas de filtro se conectan a la placa principal de ensamblaje a través de
   </div>
 </div>
 
-## Configuración Alternativa de Conector SMA
+## Configuración Alternativa con Conector SMA
 
 Aunque las placas de filtro fueron inicialmente diseñadas para ser usadas en este proyecto y conectadas a través de tiras de pines, la disposición de las pistas de "tierra" y "RF" permite soldar conectores SMA para placas de circuito de 1.6mm (que requieren cortar dos de sus cuatro pines de "tierra") y así poder usarlas en cualquier otro proyecto que requiera este tipo de conectores.
 
@@ -422,23 +422,6 @@ Para proceder con el ajuste y verificación de filtros (**OBLIGATORIO**), deben 
   </div>
 </div>
 
-### Método de Prueba Alternativo
-
-Otra opción es usar un par de conectores SMA hembra que pueden ubicarse en la placa principal para conexión al equipo de medición: por un lado, el de salida marcado como "RF OUT", y por otro lado, uno que soldaremos temporalmente en la parte inferior de la placa principal, llevando su pin central a la posición "IN" de los filtros (formada por dos pines) y soldando sus dos pines laterales (tierra) al área proporcionada para este propósito en la placa.
-
-<div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
-  <div style={{textAlign: 'center', flex: 1}}>
-    <img src={require('@site/static/img/wspr-beakon-filter-calibration-5.webp').default} alt="Calibración de filtro" style={{maxWidth: '500px', width: '100%'}} />
-  </div>
-  <div style={{textAlign: 'center', flex: 1}}>
-    <img src={require('@site/static/img/wspr-beakon-filter-calibration-6.webp').default} alt="Calibración de filtro" style={{maxWidth: '500px', width: '100%'}} />
-  </div>
-</div>
-
-:::warning Precauciones Importantes de Prueba
-Si se va a usar esta última opción de conexión al equipo de medición, es altamente recomendable comenzar con la construcción de los filtros antes de soldar cualquier otro elemento en la placa principal, para evitar daños a componentes en una mala maniobra con el soldador. Si se va a usar esta opción de conexión cuando la placa principal ya tenga sus componentes soldados e instalados, es esencial desconectar el módulo RF Si5351 mientras se ajustan los filtros.
-:::
-
 ## Respuesta Esperada del Filtro
 
 Los gráficos que obtendremos en el equipo de medición, dependiendo del tipo de filtro usado, deberían ser similares a los siguientes ejemplos:
@@ -458,5 +441,5 @@ Los gráficos que obtendremos en el equipo de medición, dependiendo del tipo de
 </div>
 
 :::warning Importante - Intercambio de Filtros
-Al intercambiar filtros en la placa principal para cambiar bandas, se debe prestar especial atención para asegurar que la serigrafía "IN" del filtro mire hacia el módulo RF (y coincida con la serigrafía "RF IN" de la placa principal), y que insertemos los 4 pines de ambos sockets. Puede suceder, si no prestamos atención, que uno de los pines quede fuera de su socket, lo que llevaría a un comportamiento totalmente anómalo del conjunto.
+Al intercambiar filtros en la placa principal para cambiar bandas, se debe prestar especial atención para asegurar que la serigrafía "IN" del filtro mire hacia el módulo RF (y coincida con la serigrafía "RF IN" de la placa principal), y que insertemos los 4 pines de ambos zócalos. Puede suceder, si no prestamos atención, que uno de los pines quede fuera de su socket, lo que llevaría a un comportamiento totalmente anómalo del conjunto.
 :::

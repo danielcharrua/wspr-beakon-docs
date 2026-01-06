@@ -4,10 +4,6 @@ sidebar_position: 2
 
 # Bill of Materials
 
-:::info
-For convenience, pre-selected component kits are available to simplify the build process. See [Kit Options](/docs/kit-options) for details. This helps ensure you have all compatible parts, even if some individual links become outdated over time.
-:::
-
 The WSPR Beakon is designed as a modular system with different configuration flavors to suit various needs and capabilities. Before beginning assembly, review the available flavors and select the components needed for your chosen configuration.
 
 ## Core Configuration Components
@@ -111,7 +107,7 @@ The most basic version is powered from the USB connector of the ESP32 module and
 | **4-pin Female Socket** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
 | **7-pin Female Socket** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
 | **19-pin Female Socket** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **4-pin Male Header** | 1 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
+| **4-pin Male Header** | 3 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **5-pin Male Header** | 1 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Metal Standoffs** | 7 | M2.5 x 11mm female-female | [AliExpress](https://es.aliexpress.com/item/1005001478301407.html) |
 | **Screws** | 14 | M2.5 x 5mm | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
@@ -205,7 +201,7 @@ With this upgrade we provide the capability to power the circuit at 12 (or 13.8)
 | **1-pin Male Headers** | 4 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **2-pin Male Header Strip** | 1 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 
-## Enhancement 3: External Filter Bank
+## Enhancement 3: External Relay Control
 
 To enable this enhancement, we must have previously implemented enhancement number 2. With this improvement we incorporate seven relay outputs (high level, 12 volts) configurable according to the working band (pins marked as 12, 14, 27, 26, 25, 33 and 32), and an eighth relay output (pin marked as 13) controlled by the TX periods of the circuit and which is "sequenced" to avoid switching with RF (it goes high level, 12 volts, half a second before going to TX and goes low level half a second after TX ceases). For this enhancement, the following elements need to be added:
 
@@ -213,7 +209,7 @@ To enable this enhancement, we must have previously implemented enhancement numb
   <img src={require('@site/static/img/wspr-beakon-pcb-ext-filters.webp').default} alt="WSPR Beakon PCB Filter" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
-### Visual Identification of External Filter Bank Components
+### Visual Identification of External Relay Control Components
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>

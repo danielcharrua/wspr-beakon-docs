@@ -4,17 +4,13 @@ sidebar_position: 1
 
 # Descripción del Proyecto
 
-Bienvenido a la documentación completa del **WSPR Beakon** - un transmisor baliza WSPR (Weak Signal Propagation Reporter) modular y expandible basado en microcontrolador ESP32 con generador de reloj Si5351.
-
-:::info
-Para mayor comodidad, hay kits de componentes preseleccionados disponibles para ayudarte a empezar rápidamente. Ver [Opciones de Kit](/docs/kit-options) para detalles.
-:::
+Bienvenido a la documentación completa del **WSPR Beakon**, un transmisor baliza WSPR (Weak Signal Propagation Reporter) modular y expandible basado en microcontrolador ESP32 con generador de reloj Si5351.
 
 ## ¿Qué es WSPR?
 
-WSPR (Weak Signal Propagation Reporter) es un protocolo digital y programa de computadora usado para comunicación de radio de señal débil entre operadores de radioaficionados. El protocolo fue desarrollado por el físico ganador del Premio Nobel Joe Taylor (K1JT).
+WSPR (Weak Signal Propagation Reporter) es un protocolo digital y programa de computadora usado para comunicación de radio de señal débil entre radioaficionados. El protocolo fue desarrollado por el físico ganador del Premio Nobel Joe Taylor (K1JT).
 
-WSPR es un modo de radio cuyo uso principal es el estudio de propagación a través de diferentes bandas de radioaficionados, y también permite efectivamente la comparación directa de diferentes antenas o ubicaciones. Utiliza períodos de transmisión de dos minutos y típicamente emplea muy baja potencia, con el rango más común siendo entre un milivatio (1 mW) y un vatio (1 W). En términos muy generales, se podría decir que una transmisión de 1 vatio en WSPR es equivalente a 10 vatios en FT8, 100 vatios en CW, o 1000 vatios en SSB.
+WSPR es un modo de radio cuyo uso principal es el estudio de propagación a través de diferentes bandas de radioaficionados, y también permite efectivamente la comparación directa de diferentes antenas o ubicaciones. Utiliza períodos de transmisión de dos minutos y típicamente emplea muy baja potencia, siendo el rango más común entre un milivatio (1 mW) y un vatio (1 W). En términos muy generales, se podría decir que una transmisión de 1 vatio en WSPR es equivalente a 10 vatios en FT8, 100 vatios en CW, o 1000 vatios en SSB.
 
 Existe una gran red de estaciones receptoras WSPR distribuidas mundialmente en diferentes bandas, y muchas de estas estaciones suben sus reportes al sitio web WSPR: [https://www.wsprnet.org/drupal/wsprnet/map](https://www.wsprnet.org/drupal/wsprnet/map). Este sitio web presenta inicialmente un mapa de reportes donde puedes filtrar por banda, indicativo, período de tiempo, etc. El mismo sitio web, en la sección "Database", permite obtener un listado de texto detallado con información comprensiva en la que también se pueden aplicar filtros de búsqueda.
 
@@ -36,7 +32,7 @@ El ensamblaje propuesto está diseñado para transmitir en bandas HF, MF y LF. E
 - **Sincronización de tiempo vía módulo GPS**: Incluye antena integrada con opción de conectar antena externa
 - **Pantalla LCD**: Muestra varios parámetros del equipo e información de estado
 - **Encoder rotatorio**: Para seleccionar la banda de operación
-- **Sockets para filtros incorporados**: Sockets montados en PCB para inserción de filtros pasa-bajos
+- **Zócalos para filtros incorporados**: Zócalos montados en PCB para inserción de filtros pasa-bajos
 - **Potencia de salida configurable**: Control de potencia de cuatro pasos entre 1 y 10 milivatios
 - **Siete salidas de relé**: Salidas de alto nivel configurables según la banda de operación
 - **Salida de relé TX/RX**: Salida de alto nivel que se activa/desactiva con cambios de transmisión
@@ -58,7 +54,7 @@ Para usar este ensamblaje en la práctica conectándolo a una antena real, **DEB
 :::
 
 :::warning Seguridad de Alimentación
-Si estás alimentando el circuito desde una fuente externa, es **ALTAMENTE RECOMENDADO** que esta fuente se apague antes de conectar una PC al módulo ESP32. **NO HACERLO PUEDE DAÑAR IRREPARABLEMENTE LA PC.**
+Si estás alimentando el circuito desde una fuente externa, es **ALTAMENTE RECOMENDADO** que esta fuente se apague antes de conectar un PC al módulo ESP32. **NO HACERLO PUEDE DAÑAR IRREPARABLEMENTE EL PC.**
 :::
 
 :::info Uso Responsable de Potencia
@@ -67,7 +63,7 @@ WSPR es un modo altamente efectivo diseñado para el uso de niveles de potencia 
 
 ## Consideraciones Importantes del Ensamblaje
 
-Este ensamblaje, aunque pueda parecer lo contrario por la fotografía inicial, involucra más que solo ensamblar los diferentes módulos que lo componen. Incluso en la versión más básica, se deben ensamblar filtros (soldando componentes) y necesitas conocimiento para ajustarlos con equipo de medición (por ejemplo, un nanoVNA), y la frecuencia de salida también debe ser calibrada con equipo de medición apropiado o con un receptor (o transceptor) razonablemente ajustado en frecuencia. **En esencia, este no es un proyecto plug-and-play.**
+Este montaje, aunque pueda parecer lo contrario por la fotografía inicial, involucra más que solo ensamblar los diferentes módulos que lo componen. Incluso en la versión más básica, se deben construir filtros (soldando componentes) y necesitas conocimiento para ajustarlos con equipo de medición (por ejemplo, un nanoVNA), y la frecuencia de salida también debe ser calibrada con equipo de medición apropiado o con un receptor (o transceptor) razonablemente ajustado en frecuencia. **En esencia, este no es un proyecto plug-and-play.**
 
 Se recomienda una lectura completa de esta documentación antes de comenzar el ensamblaje propuesto, ya que hay algunos elementos que se sueldan o no dependiendo de la opción de operación elegida, y podría pasar que algo innecesario para nuestras intenciones haya sido soldado o adquirido. Una lectura completa y cuidadosa nos dará una visión general para elegir la opción de ensamblaje que mejor se ajuste a nuestras expectativas.
 

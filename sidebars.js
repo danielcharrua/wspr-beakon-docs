@@ -25,7 +25,6 @@ const sidebars = {
     'software-configuration',
     'lcd-encoder-usage',
     'frequency-calibration',
-    'kit-options',
     'license-disclaimer',
   ],
 

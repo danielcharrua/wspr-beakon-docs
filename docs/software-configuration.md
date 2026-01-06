@@ -60,6 +60,10 @@ Configure Arduino IDE with the following settings:
 
 ### Firmware Upload
 
+:::warning Power Safety
+If you are powering the circuit from an external source, it is **STRONGLY RECOMMENDED** that this source be turned off before connecting a PC to the ESP32 module. **FAILURE TO DO SO MAY IRREPARABLY DAMAGE THE PC.**
+:::
+
 1. Connect your ESP32 to your computer via USB cable
 2. Open `wspr-beakon.ino` in Arduino IDE
 3. Configure the required parameters (see Configuration section below)
@@ -87,7 +91,7 @@ Before uploading the firmware, you must modify the configuration variables in th
 // WSPR transmitter configuration
 #define WSPR_CALL "EA1REX"  // Your 4-6 character callsign
 #define WSPR_LOC "IN53"     // Your 4-character grid locator
-#define WSPR_DBM 20         // Power level shown in WSPR frame (0, 3, 7, 10 dBm)
+#define WSPR_DBM 10         // Power level shown in WSPR frame (0, 3, 7, 10 dBm)
 #define WSPR_TX_EVERY 4     // Transmit every X minutes (2, 4, 6, 8, 10, etc.)
 ```
 
@@ -111,6 +115,10 @@ const WiFiNetwork wifiNetworks[] = {
 };
 ```
 
+:::info SSID
+"Your_SSID_1" is the name of your WiFi network
+:::
+
 ### Band Configuration
 
 Configure frequencies, crystal calibration, and relay pins for each band:
@@ -128,7 +136,7 @@ Configure frequencies, crystal calibration, and relay pins for each band:
   {14099615UL,  25000000UL, "14.095 MHz 20m",  27},   // 20m band
   {10142033UL,  25000000UL, "10.138 MHz 30m",  27},   // 30m band
   {7041356UL,   25000000UL, "7.038 MHz 40m",   26},   // 40m band
-  {5287200UL,   25000000UL, "5.287 MHz 60m",   26},   // 60m band
+  {5364700UL,   25000000UL, "5.364 MHz 60m",   26},   // 60m band
   {3570732UL,   25000000UL, "3.568 MHz 80m",   25},   // 80m band
   {1838426UL,   25000000UL, "1.836 MHz 160m",  33},   // 160m band
   {475786UL,    25000000UL, "0.474 MHz 630m",  32},   // 630m band

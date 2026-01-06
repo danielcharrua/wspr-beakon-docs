@@ -4,10 +4,6 @@ sidebar_position: 2
 
 # Lista de Materiales
 
-:::info
-Para mayor comodidad, hay kits de componentes preseleccionados disponibles para simplificar el proceso de construcción. Ver [Opciones de Kit](/docs/kit-options) para detalles. Esto ayuda a asegurar que tengas todas las partes compatibles, incluso si algunos enlaces individuales se vuelven obsoletos con el tiempo.
-:::
-
 El WSPR Beakon está diseñado como un sistema modular con diferentes configuraciones para adaptarse a varias necesidades y capacidades. Antes de comenzar el ensamblaje, revise las configuraciones disponibles y seleccione los componentes necesarios para su configuración elegida.
 
 ## Componentes de Configuración Principal
@@ -86,12 +82,12 @@ La versión más básica se alimenta desde el conector USB del módulo ESP32 y c
     <div style={{fontWeight: 'bold'}}>PCB de Filtro</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src={require('@site/static/img/parts/wspr-beakon-axial-inductor.webp').default} alt="Inductores de Filtro" style={{maxWidth: '120px', marginBottom: '8px'}} />
-    <div style={{fontWeight: 'bold'}}>Inductores de Filtro</div>
+    <img src={require('@site/static/img/parts/wspr-beakon-axial-inductor.webp').default} alt="Inductores para el Filtro" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <div style={{fontWeight: 'bold'}}>Inductores para el Filtro</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src={require('@site/static/img/parts/wspr-beakon-ceramic-capacitor-1.webp').default} alt="Condensadores de Filtro" style={{maxWidth: '120px', marginBottom: '8px'}} />
-    <div style={{fontWeight: 'bold'}}>Condensadores de Filtro</div>
+    <img src={require('@site/static/img/parts/wspr-beakon-ceramic-capacitor-1.webp').default} alt="Condensadores para el Filtro" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <div style={{fontWeight: 'bold'}}>Condensadores para el Filtro</div>
   </div>
 </div>
 
@@ -111,7 +107,7 @@ La versión más básica se alimenta desde el conector USB del módulo ESP32 y c
 | **Socket Hembra 4 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
 | **Socket Hembra 7 pines** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
 | **Socket Hembra 19 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **Tira de Pines Macho 4 pines** | 1 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
+| **Tira de Pines Macho 4 pines** | 3 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Tira de Pines Macho 5 pines** | 1 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Separadores Metálicos** | 7 | M2.5 x 11mm hembra-hembra | [AliExpress](https://es.aliexpress.com/item/1005001478301407.html) |
 | **Tornillos** | 14 | M2.5 x 5mm | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
@@ -205,7 +201,7 @@ Con esta mejora proporcionamos la capacidad de alimentar el circuito a 12 (o 13.
 | **Pines Macho 1 pin** | 4 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Tira de Pines Macho 2 pines** | 1 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 
-## Mejora 3: Componentes de Banco de Filtros Externo
+## Mejora 3: Control de Relés Externos
 
 Para habilitar esta mejora, debemos haber implementado previamente la mejora número 2. Con esta mejora incorporamos siete salidas de relé (nivel alto, 12 voltios) configurables según la banda de trabajo (pines marcados como 12, 14, 27, 26, 25, 33 y 32), y una octava salida de relé (pin marcado como 13) controlada por los períodos TX del circuito y que está "secuenciada" para evitar conmutación con RF (va a nivel alto, 12 voltios, medio segundo antes de ir a TX y va a nivel bajo medio segundo después de que cese TX). Para esta mejora, es necesario añadir los siguientes elementos:
 
@@ -213,7 +209,7 @@ Para habilitar esta mejora, debemos haber implementado previamente la mejora nú
   <img src={require('@site/static/img/wspr-beakon-pcb-ext-filters.webp').default} alt="PCB Filtro WSPR Beakon" style={{maxWidth: '600px', width: '100%'}} />
 </div>
 
-### Identificación Visual de Componentes para Banco de Filtros Externo
+### Identificación Visual de Componentes para Control de Relés Externos
 
 <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '32px', marginBottom: '32px'}}>
   <div style={{width: '160px', textAlign: 'center'}}>

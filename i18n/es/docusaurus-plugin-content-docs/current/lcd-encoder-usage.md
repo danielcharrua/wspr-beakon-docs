@@ -2,9 +2,9 @@
 sidebar_position: 6
 ---
 
-# Uso de Pantalla LCD y Codificador
+# Uso de Pantalla LCD y Encoder
 
-Esta sección cubre la información de la pantalla LCD y el funcionamiento del codificador para su sistema WSPR Beakon.
+Esta sección cubre la información de la pantalla LCD y el funcionamiento del encoder para su sistema WSPR Beakon.
 
 ## Secuencia de Arranque del Sistema
 
@@ -17,6 +17,7 @@ Cuando se aplica energía al conjunto, ocurre la siguiente secuencia:
 
 :::info Adquisición de Señal GPS
 La adquisición de señal GPS puede tomar varios minutos. Para un rendimiento óptimo:
+
 - Posicione el conjunto en un área despejada con una vista amplia del cielo
 - Si usa la antena GPS integrada y el conjunto está dentro de una carcasa, asegúrese de que la carcasa esté hecha de material no metálico
 :::
@@ -29,6 +30,7 @@ La adquisición de señal GPS puede tomar varios minutos. Para un rendimiento ó
 ### Fase de Prueba de Señal
 
 Una vez que se detecta una red WiFi válida o señal GPS:
+
 - LCD muestra **"Testing signal"**
 - El equipo comienza una transmisión de prueba de 30 segundos
 
@@ -39,8 +41,9 @@ Una vez que se detecta una red WiFi válida o señal GPS:
 Después de la transmisión de prueba, el LCD muestra:
 
 **Línea Superior**: Mensaje deslizante que contiene:
+
 - Indicativo
-- Localizador
+- Locator
 - Frecuencia
 - Banda
 - Potencia transmitida (en dBm)
@@ -54,15 +57,15 @@ Después de la transmisión de prueba, el LCD muestra:
 2. **Durante la transmisión WSPR**: LCD muestra **"Transmitting WSPR message"**
 3. **Después de la transmisión**: Regresa a la pantalla de información deslizante y temporizador de cuenta regresiva
 
-## Funcionamiento del Codificador
+## Funcionamiento del Encoder
 
 ### Proceso de Selección de Banda
 
-El codificador rotatorio se usa para cambiar bandas y solo puede operarse durante los períodos de descanso de transmisión:
+El encoder rotatorio se usa para cambiar bandas y solo puede operarse durante los períodos de descanso de transmisión:
 
-1. **Presione el codificador** - **"Select Freq"** aparece el mensaje
-2. **Gire el codificador** - Navegue por las bandas disponibles en cualquier dirección
-3. **Presione el codificador nuevamente** cuando se muestre la banda deseada - **"Frequency Set"** aparece el mensaje y se selecciona la nueva banda
+1. **Presione el encoder** - **"Select Freq"** aparece el mensaje
+2. **Gire el encoder** - Navegue por las bandas disponibles en cualquier dirección
+3. **Presione el encoder nuevamente** cuando se muestre la banda deseada - **"Frequency Set"** aparece el mensaje y se selecciona la nueva banda
 
 :::warning Recordatorio Crítico
 **¡Siempre recuerde insertar el filtro apropiado para la nueva banda después de cambiar la frecuencia!**
@@ -77,6 +80,7 @@ El codificador rotatorio se usa para cambiar bandas y solo puede operarse durant
 
 | Mensaje | Significado |
 |---------|-------------|
+
 | "Connecting Wifi" | Intentando conectar a redes WiFi preconfiguradas |
 | "Reading GPS" | Intentando adquirir señal GPS |
 | "Wifi Connected" + "Reading GPS" | WiFi conectado pero sin acceso a internet |
@@ -89,7 +93,8 @@ El codificador rotatorio se usa para cambiar bandas y solo puede operarse durant
 ## Solución de Problemas de Pantalla
 
 Si la pantalla muestra comportamiento inesperado:
+
 - Asegúrese del voltaje adecuado de la fuente de alimentación
 - Verifique las conexiones del LCD
-- Verifique el cableado del codificador
+- Verifique el cableado del encoder
 - Confirme que el sistema ha sido correctamente inicializado después de la carga del firmware

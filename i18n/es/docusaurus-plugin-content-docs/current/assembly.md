@@ -4,10 +4,6 @@ sidebar_position: 3
 
 # Guía de Ensamblaje
 
-:::info
-Para mayor comodidad, están disponibles kits de componentes preseleccionados para simplificar el ensamblaje. Consulte [Opciones de Kit](/docs/kit-options) para obtener detalles.
-:::
-
 Esta guía proporciona instrucciones paso a paso para ensamblar componentes en la PCB principal de su WSPR Beakon. Siga estas instrucciones cuidadosamente para asegurar un ensamblaje y funcionamiento adecuados.
 
 ## Ensamblaje de Componentes de la PCB Principal
@@ -22,18 +18,17 @@ Al ensamblar los diversos componentes en la placa principal, se recomienda segui
 
 - Verifique que la serigrafía de pines de los diferentes módulos coincida con la serigrafía de la placa principal, ya que puede haber diferentes versiones de módulos con diferentes distribuciones de pines
 
-## 2. Instalación de Sockets para Filtros
+## 2. Instalación de Zócalos para Filtros
 
-- Suelde los dos sockets hembra de 4 pines para los filtros, presionándolos contra la placa durante la soldadura para que estén correctamente asentados y formen 90 grados con respecto a la placa
-- Si los filtros van a ser ajustados usando los conectores propios de la placa principal, suelde los dos conectores SMA hembra necesarios (ver notas en el área final de la sección "Filtros" en el siguiente bloque de este manual) y proceda con el montaje y ajuste de dichos filtros antes de continuar soldando cualquier cosa en la placa principal
+- Suelde los dos zócalos hembra de 4 pines para los filtros, presionándolos contra la placa durante la soldadura para que estén correctamente asentados y formen 90 grados con respecto a la placa
 
 ## 3. Instalación de Socket ESP32
 
-- Suelde los sockets de pines hembra para el ESP32, cuidando que estén correctamente asentados y por tanto formen 90 grados con respecto a la placa
+- Suelde los zócalos de pines hembra para el ESP32, cuidando que estén correctamente asentados y por tanto formen 90 grados con respecto a la placa
 
 ## 4. Instalación de Socket del Módulo RF Si5351
 
-- Suelde los sockets de pines hembra para el módulo RF (Si5351), cuidando que estén correctamente asentados y por tanto formen 90 grados con respecto a la placa
+- Suelde los zócalos de pines hembra para el módulo RF (Si5351), cuidando que estén correctamente asentados y por tanto formen 90 grados con respecto a la placa
 
 ## 5. Instalación de Pines del Módulo Si5351
 
@@ -75,11 +70,11 @@ Si se quiere mejorar aún más la deriva de frecuencia, se puede preparar una pe
 
 La deriva final del módulo se puede comprobar (preferiblemente en 10 metros por ser la banda más alta y por tanto más crítica), después de tenerlo encendido durante 10 minutos, recibiéndonos nosotros mismos, o también en el sitio web "wsprnet.org", sección "Database", buscando nuestros reportes enviados por otras estaciones (en "Call" pondremos nuestro indicativo). Si la sección "Drift" muestra valores de -1, 0, o 1, todo va razonablemente bien.
 
-- **Valores positivos** (2, 3, o 4): Indica que estamos sobrecalentando el módulo - quitar una resistencia o separarlas un poco de los componentes de la placa
-- **Valores negativos** (-4, -3, o -2): Indica que el módulo requiere más calor - añadir una tercera resistencia o acercarlas más a los componentes
+- **Valores positivos** (2, 3, o 4): Indica que estamos sobrecalentando el módulo; quitar una resistencia o separarlas un poco de los componentes de la placa
+- **Valores negativos** (-4, -3, o -2): Indica que el módulo requiere más calor; añadir una tercera resistencia (si hubiera solo dos) o acercarlas
 - **Desviaciones** de ±5 o más: Serán tramas indecodificables y aparecerán claramente inclinadas en la "Cascada" de programas como WSJT-X
 
-## 7. Instalación de Pines de Encabezado
+## 7. Instalación de Pines para el Cableado
 
 - Suelde las tiras de pines macho (lado corto apoyado en la placa) correspondientes a "LCD" (4 pines) y "Encoder" (5 pines)
 
@@ -89,7 +84,7 @@ La deriva final del módulo se puede comprobar (preferiblemente en 10 metros por
 
 ## 9. Conector de Salida RF
 
-- Suelde el conector SMA de salida (RF OUT) si no se ha hecho ya para el ajuste de filtros
+- Suelde el conector SMA de salida (RF OUT) si tiene previsto usarlo en la posición habilitada para ello en la placa; en caso contrario deberá reconducir la RF, con un cable coaxial, hasta la posición donde se encuentre el conector de salida de RF empleado
 
 ## 10. Instalación de Módulos
 
@@ -99,7 +94,7 @@ La deriva final del módulo se puede comprobar (preferiblemente en 10 metros por
 
 ## 11. Cableado de Pantalla y Codificador
 
-- Conecte el LCD y el codificador a sus respectivos sockets con cables "Dupont" hembra-a-hembra, respetando la nomenclatura de pines mostrada en la serigrafía de las placas correspondientes
+- Conecte el LCD y el codificador a sus respectivos zócalos con cables "Dupont" hembra-a-hembra, respetando la nomenclatura de pines mostrada en la serigrafía de las placas correspondientes
 
 ## Verificación del Progreso del Ensamblaje
 
@@ -165,17 +160,17 @@ Esta área de la placa debería verse aproximadamente así:
 
 Si desea actualizar la placa con la "Mejora 2" (alimentación externa de 12V), siga estos pasos:
 
-### 16. Encabezado de Entrada de Alimentación
+### 16. Entrada de Alimentación
 
 - Suelde la tira de pines macho de 2 pines (lado corto apoyado en la placa) en la posición marcada como "GND" y "12V"
 
-### 17. Sockets del Convertidor DC-DC
+### 17. Zócalos del Convertidor DC-DC
 
-- Suelde los dos sockets hembra de 4 pines en la posición correspondiente para el convertidor DC-DC, cuidando que estén correctamente asentados y formen 90 grados con respecto a la placa
+- Suelde los dos zócalos hembra de 4 pines en la posición correspondiente para el convertidor DC-DC, cuidando que estén correctamente asentados y formen 90 grados con respecto a la placa
 
-### 18. Instalación de Pines de Esquina
+### 18. Instalación de Pines en las Esquinas
 
-- Inserte solo 4 pines macho (desde el lado largo) en las 4 esquinas del rectángulo formado por ambos sockets hembra (posiciones marcadas en la placa como GND, 12V, GND, 5V). Los dos pines centrales de cada socket hembra de 4 pines no se usan
+- Inserte solo 4 pines macho (desde el lado largo) en las 4 esquinas del rectángulo formado por ambos zócalos hembra (posiciones marcadas en la placa como GND, 12V, GND, 5V). Los dos pines centrales de cada socket hembra de 4 pines no se usan
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
@@ -213,11 +208,11 @@ Para que esta parte funcione, es necesario haber implementado previamente la "Me
 
 - Suelde el socket de 18 pines para el IC UDN2981 (con la "muesca" orientada como se muestra en la serigrafía de la placa principal)
 
-### 22. Encabezados de Salida de Relé
+### 22. Conectores de salida de relé
 
 - Suelde la tira de pines macho de 8 pines (lado corto apoyado en la placa) que forma las salidas a los diferentes relés
 
-### 23. Encabezado de Tierra Opcional
+### 23. Conectores de Tierra Opcional
 
 - Opcionalmente suelde la tira de pines macho de 4 pines (lado corto apoyado en la placa) en la posición marcada como GND cerca del IC, para facilitar un punto de conexión de tierra común para periféricos que puedan necesitarlo (por ejemplo, una placa de relés para un filtro multibanda externo)
 
@@ -237,13 +232,13 @@ Con el ensamblaje de la PCB completo, es hora de instalar todo en la carcasa imp
 
 ### 25. Instalación de Insertos
 
-- Instale los insertos roscados (M3) en los agujeros designados de la carcasa
+- Instale los insertos roscados (M2.5) en los agujeros designados de la carcasa
 - Use un soldador para calentar los insertos y presionarlos en el plástico hasta que queden al ras con la superficie
 - Deje enfriar completamente antes de continuar
 
 ### 26. Montaje de la PCB Base
 
-- Asegure la PCB principal a la base de la carcasa usando tornillos M3
+- Asegure la PCB principal a la base de la carcasa usando tornillos M2.5
 - Asegúrese de que la PCB se asiente plana y todos los agujeros de montaje se alineen correctamente
 - No apriete demasiado los tornillos para evitar agrietar el plástico
 
@@ -251,16 +246,17 @@ Con el ensamblaje de la PCB completo, es hora de instalar todo en la carcasa imp
 
 - Monte la pantalla LCD en la abertura del panel frontal
 - Instale el codificador rotatorio (HW-040) en su posición designada
-- Asegure ambos componentes con sus respectivas tuercas y arandelas
+- Asegure ambos componentes con sus respectivos tornillos (LCD) y tuerca + arandela (encoder)
 
 ### 28. Ensamblaje del Panel Trasero
 
-- Instale el conector SMA (SO-239) en el panel trasero
+- Instale el conector SO-239 (PL hembra de chasis) en el panel trasero
 - Asegúrese de que el conector esté correctamente asentado y apretado
+- Uno de los tornillos, por la parte interior de la caja, deberá llevar un terminal de tierra para poder soldar la malla del cable coaxial de RF
 
 ### 29. Conexión RF
 
-- Conecte la salida RF de la PCB al conector SMA trasero usando cable coaxial RG-316
+- Conecte la salida RF de la PCB al conector SO-239 trasero usando cable coaxial RG-316
 - Suelde las conexiones cuidadosamente, asegurando una buena continuidad RF
 - Mantenga la longitud del cable lo más corta posible para minimizar las pérdidas
 
@@ -274,8 +270,9 @@ Con el ensamblaje de la PCB completo, es hora de instalar todo en la carcasa imp
 
 - Posicione cuidadosamente el panel frontal con LCD y codificador
 - Enrute todos los cables ordenadamente dentro de la carcasa para evitar pellizcos
-- Asegure el panel frontal a la base usando tornillos M3
-- Instale el panel trasero y asegúrelo con tornillos M3
+- Inserte los paneles frontal y trasero en sus respectivas ranuras de la base
+- Inserte la tapa deslizante en las guías internas de la carcasa superior, teniendo cuidado de que la muesca quede hacia el exterior y hacia delante. La parte delantera de la carcasa tiene un borde ligeramente inclinado
+- Inserte la carcasa superior de tal modo que las partes frontal y trasera asienten en sus correspondientes ranuras
 - Realice una inspección visual final de todas las conexiones
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
@@ -288,6 +285,5 @@ Su WSPR Beakon está ahora completamente ensamblado y listo para la instalación
 
 :::tip Consejos de Ensamblaje
 - Tome fotos durante el desensamblaje como referencia si necesita hacer modificaciones más tarde
-- Etiquete los cables si tiene múltiples conexiones similares
 - Pruebe la unidad antes del cierre final de la carcasa para asegurar que todo funcione correctamente
 :::

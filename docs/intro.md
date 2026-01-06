@@ -6,10 +6,6 @@ sidebar_position: 1
 
 Welcome to the comprehensive documentation for the **WSPR Beakon** - a modular and expandable WSPR (Weak Signal Propagation Reporter) beacon transmitter based on ESP32 microcontroller with Si5351 clock generator.
 
-:::info
-For convenience, pre-selected component kits are available to help you get started quickly. See [Kit Options](/docs/kit-options) for details.
-:::
-
 ## What is WSPR?
 
 WSPR (Weak Signal Propagation Reporter) is a digital protocol and computer program used for weak-signal radio communication between amateur radio operators. The protocol was developed by Nobel Prize-winning physicist Joe Taylor (K1JT).

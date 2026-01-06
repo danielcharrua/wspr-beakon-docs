@@ -8,7 +8,7 @@ Esta sección cubre el proceso de calibración de frecuencia requerido para cada
 
 ## Por Qué se Requiere Calibración
 
-Una vez que el código inicial se carga en el conjunto, cada banda de interés debe calibrarse individualmente (este proceso no es necesario para bandas que no usará). Hay variaciones entre bandas y también variaciones entre diferentes módulos Si5351. Si necesita reemplazar un módulo Si5351 debido a falla, el proceso de calibración debe repetirse.
+Una vez que el código inicial se carga en el conjunto, cada banda de interés debe calibrarse individualmente (este proceso no es necesario para bandas que no usará). Hay variaciones entre bandas y también variaciones entre diferentes módulos Si5351. Si necesita reemplazar un módulo Si5351 debido a avería, el proceso de calibración debe repetirse.
 
 El código inicial establece la frecuencia del cristal para cada banda en 25000000 Hz. Esta frecuencia debe ajustarse para centrar correctamente la transmisión en el segmento WSPR, que es bastante estrecho. **Este paso es obligatorio y debe realizarse rigurosamente**, ya que colocar su transmisión fuera del segmento asignado impedirá que alguien reporte sus tramas.
 
@@ -20,8 +20,7 @@ La calibración adecuada de frecuencia es esencial para el funcionamiento WSPR. 
 
 Para calibración, necesitará:
 
-- Un transceptor (o receptor) que sea razonablemente preciso en frecuencia con conexión PC
-- Cualquier equipo moderno usado para modos digitales debería ser suficiente
+- Un transceptor (o receptor) que sea razonablemente preciso en frecuencia con conexión PC. Cualquier equipo moderno usado para modos digitales debería ser suficiente
 - Software WSJT-X (descargable del sitio web oficial)
 - Acceso al calculador de calibración en línea
 
@@ -33,7 +32,7 @@ Para calibración, necesitará:
 
 2. **Instale filtro apropiado**: Instale el filtro para la banda que desea calibrar
 
-3. **Conecte carga ficticia**: Instale una carga ficticia en el conector SMA de la placa principal (o una antena como alternativa)
+3. **Conecte carga ficticia**: Instale una carga ficticia en el conector de salida de RF (o una antena como mejor alternativa)
 
 4. **Encienda el conjunto**: Aplique energía para iniciar el sistema
 
@@ -44,14 +43,14 @@ Para calibración, necesitará:
 6. **Espere estabilización**: Permita 10 minutos para que el módulo Si5351 se estabilice en temperatura y frecuencia
 
 :::info Sensibilidad de Temperatura
-El Si5351 es muy sensible a ligeras corrientes de aire que causan cambios de temperatura y deriva de frecuencia. Si el conjunto está expuesto, cúbralo (incluso con una caja de cartón) para prevenir inestabilidad de frecuencia. La frecuencia inestable causa que las tramas WSPR aparezcan visiblemente "inclinadas" en pantallas de cascada y previene la decodificación adecuada.
+El Si5351 es muy sensible a ligeras corrientes de aire que causan cambios de temperatura y deriva de frecuencia. Si el conjunto está expuesto, cúbralo (incluso con una caja de cartón) para prevenir inestabilidad de frecuencia. La frecuencia inestable causa que las tramas WSPR aparezcan visiblemente "inclinadas" en pantallas de cascada e impide la decodificación adecuada.
 :::
 
 ### Configuración del Receptor
 
-7. **Configure transceptor de referencia**: 
+7. **Configure el transceptor o receptor de referencia**:
    - Encienda el transceptor a usar como referencia
-   - Sintonice a la frecuencia WSPR para la banda siendo calibrada (siempre modo USB, independientemente de la banda)
+   - Sintonice a la frecuencia WSPR para la banda que está siendo calibrada (siempre modo USB, independientemente de la banda)
    - **Frecuencias de bandas clásicas (160-10m)**: 1.836600, 3.568600, 7.038600, 14.095600, 21.094600, y 28.124600 MHz
    - Lista completa de frecuencias disponible en: [Frecuencias WSPR](http://wsprnet.org/drupal/wsprnet/spots)
 
@@ -66,9 +65,9 @@ Si usa antenas tanto para el transceptor como para el conjunto (mejor opción pa
 
 ### Configuración de WSJT-X
 
-9. **Lance WSJT-X**: 
+9. **Arranque WSJT-X**: 
    - Seleccione modo WSPR
-   - Seleccione la banda siendo calibrada
+   - Seleccione la banda que está siendo calibrada
    - Si el control CAT está configurado, el programa establecerá automáticamente la frecuencia correcta
 
 10. **Abra pantalla de cascada**: 

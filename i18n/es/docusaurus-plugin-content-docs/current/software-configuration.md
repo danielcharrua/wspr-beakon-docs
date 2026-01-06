@@ -60,6 +60,10 @@ Configura Arduino IDE con las siguientes opciones:
 
 ### Subida del Firmware
 
+:::warning Seguridad de Alimentación
+Si estás alimentando el circuito desde una fuente externa, es **ALTAMENTE RECOMENDADO** que esta fuente se apague antes de conectar un PC al módulo ESP32. **NO HACERLO PUEDE DAÑAR IRREPARABLEMENTE EL PC.**
+:::
+
 1. Conecta tu ESP32 a tu computadora vía cable USB
 2. Abre `wspr-beakon.ino` en Arduino IDE
 3. Configura los parámetros requeridos (ver sección Configuración abajo)
@@ -80,7 +84,6 @@ Antes de subir el firmware, debes modificar las variables de configuración en l
 
 - **Desarrollo**: Mantén `#define DEVMODE` descomentado para depuración y resolución de problemas
 - **Producción**: Comenta esta línea (`// #define DEVMODE`) para rendimiento óptimo en despliegue final
-
 :::
 
 ### Configuración Básica WSPR
@@ -89,7 +92,7 @@ Antes de subir el firmware, debes modificar las variables de configuración en l
 // Configuración del transmisor WSPR
 #define WSPR_CALL "EA1REX"  // Tu indicativo de 4-6 caracteres
 #define WSPR_LOC "IN53"     // Tu localizador de cuadrícula de 4 caracteres
-#define WSPR_DBM 20         // Nivel de potencia mostrado en trama WSPR (0, 3, 7, 10 dBm)
+#define WSPR_DBM 10         // Nivel de potencia mostrado en trama WSPR (0, 3, 7, 10 dBm)
 #define WSPR_TX_EVERY 4     // Transmitir cada X minutos (2, 4, 6, 8, 10, etc.)
 ```
 
@@ -113,6 +116,10 @@ const WiFiNetwork wifiNetworks[] = {
 };
 ```
 
+:::info SSID
+"Tu_SSID_1" es el nombre de tu red Wifi
+:::
+
 ### Configuración de Bandas
 
 Configura frecuencias, calibración del cristal y pines de relé para cada banda:
@@ -130,7 +137,7 @@ Configura frecuencias, calibración del cristal y pines de relé para cada banda
   {14099615UL,  25000000UL, "14.095 MHz 20m",  27},   // banda 20m
   {10142033UL,  25000000UL, "10.138 MHz 30m",  27},   // banda 30m
   {7041356UL,   25000000UL, "7.038 MHz 40m",   26},   // banda 40m
-  {5287200UL,   25000000UL, "5.287 MHz 60m",   26},   // banda 60m
+  {5364700UL,   25000000UL, "5.364 MHz 60m",   26},   // banda 60m
   {3570732UL,   25000000UL, "3.568 MHz 80m",   25},   // banda 80m
   {1838426UL,   25000000UL, "1.836 MHz 160m",  33},   // banda 160m
   {475786UL,    25000000UL, "0.474 MHz 630m",  32},   // banda 630m

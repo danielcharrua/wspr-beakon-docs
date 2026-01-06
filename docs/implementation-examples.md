@@ -4,10 +4,6 @@ sidebar_position: 2
 
 # Implementation Examples
 
-:::info
-For convenience, pre-selected component kits are available to help you replicate these builds. See [Kit Options](/docs/kit-options) for details and ordering information.
-:::
-
 This section showcases the versatility and modularity of the WSPR Beakon project through different implementation examples. The basic design can be enhanced and adapted for various use cases while maintaining the core functionality.
 
 ## Basic WSPR Beakon
@@ -57,9 +53,9 @@ The core WSPR Beakon system with GPS synchronization represents the fundamental 
 </div>
 
 **Features:**
-- GPS-based time synchronization
+- GPS-based or NTP (WiFi) time synchronization
 - Multi-band operation with manual filter selection
-- LCD display with encoder interface
+- LCD display and user interface with encoder
 - Compact design suitable for portable operation
 - Optional 3D printed enclosure available
 
@@ -96,13 +92,13 @@ This implementation demonstrates how easily the basic design can be enhanced wit
 **Features:**
 - All basic WSPR Beakon functionality
 - Integrated RF amplifier for higher output power
-- Single-band optimized operation
+- Multi-band operation with manual intervention
 - Open construction for easy modifications
 - Demonstrates modular enhancement approach
 
 ## Advanced Multi-Band System
 
-This implementation represents the most complete version, featuring automatic filter bank selection and integrated amplification. The system operates from 12V supply and includes sophisticated relay control for seamless band switching.
+This implementation represents the most complete version, featuring automatic filter bank selection and integrated amplification. The system operates from a 220V AC or 12V DC power source and includes automatic relay control for seamless band switching.
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
   <img src={require('@site/static/img/wspr-beakon-enhanced-unit.webp').default} alt="WSPR Beakon - Enhanced unit" style={{maxWidth: '600px', width: '100%'}} />
@@ -136,12 +132,12 @@ This implementation represents the most complete version, featuring automatic fi
 </div>
 
 **Features:**
-- Automatic filter bank with relay switching
+
 - Integrated RF amplifier
-- 12V power supply operation
+- 220V AC or 12V DC power supply operation
 - GPS integration for precise timing
-- Relay control system for seamless band changes
-- Professional enclosure for permanent installation
+- Relay control system for automatic filter switching
+- Commercial enclosure with custom machining
 - Multi-band operation without manual intervention
 
 ## Project Modularity
@@ -151,7 +147,7 @@ These examples demonstrate the inherent modularity of the WSPR Beakon design:
 - **Core functionality** remains consistent across all implementations
 - **Enhancement modules** can be added as needed
 - **Mechanical integration** adapts to different use cases
-- **Power requirements** scale with complexity
+- **Scalable power requirements** based on needs
 - **Control systems** maintain the same user interface
 
 Whether you need a simple portable beacon or a sophisticated multi-band station, the WSPR Beakon architecture provides a solid foundation for your specific requirements.

@@ -4,10 +4,6 @@ sidebar_position: 3
 
 # Assembly Guide
 
-:::info
-For convenience, pre-selected component kits are available to simplify assembly. See [Kit Options](/docs/kit-options) for details.
-:::
-
 This guide provides step-by-step instructions for assembling components on the main PCB of your WSPR Beakon. Follow these instructions carefully to ensure proper assembly and operation.
 
 ## Main PCB Component Assembly
@@ -25,7 +21,6 @@ When assembling the various components on the main board, it is recommended to f
 ## 2. Filter Socket Installation
 
 - Solder the two 4-pin female sockets for the filters, pressing them against the board during soldering so they are properly seated and form 90 degrees with respect to the board
-- If the filters are to be adjusted using the main board's own connectors, solder the two necessary female SMA connectors (see notes in the final area of the "Filters" section in the next block of this manual) and proceed with mounting and adjusting said filters before continuing to solder anything on the main board
 
 ## 3. ESP32 Socket Installation
 
@@ -76,7 +71,7 @@ If you want to further improve frequency drift, you can prepare a small box for 
 The final drift of the module can be checked (preferably on 10 meters as it is the highest band and therefore most critical), after having it turned on for 10 minutes, by receiving it ourselves, or also on the "wsprnet.org" website, "Database" section, searching for our reports sent by other stations (in "Call" we will put our callsign). If the "Drift" section shows values of -1, 0, or 1, everything is going reasonably well.
 
 - **Positive values** (2, 3, or 4): Indicates we are overheating the module - remove one resistor or separate them a bit from the board components
-- **Negative values** (-4, -3, or -2): Indicates the module requires more heat - add a third resistor or move them closer to components  
+- **Negative values** (-4, -3, or -2): Indicates the module requires more heat; add a third resistor (if there are only two) or move them closer together
 - **Deviations** of ±5 or more: Will be undecodable frames and will appear clearly tilted in the "Waterfall" of programs like WSJT-X
 
 ## 7. Header Pin Installation
@@ -89,7 +84,7 @@ The final drift of the module can be checked (preferably on 10 meters as it is t
 
 ## 9. RF Output Connector
 
-- Solder the output SMA connector (RF OUT) if not already done for filter adjustment
+- Solder the output SMA connector (RF OUT) if you plan to use it in the position provided on the board; otherwise, you must reroute the RF using a coaxial cable to the location where the RF output connector being used is installed
 
 ## 10. Module Installation
 
@@ -237,13 +232,13 @@ With the PCB assembly complete, it's time to install everything in the 3D printe
 
 ### 25. Insert Installation
 
-- Install the threaded inserts (M3) in the designated holes of the case
+- Install the threaded inserts (M2.5) in the designated holes of the case
 - Use a soldering iron to heat the inserts and press them into the plastic until they are flush with the surface
 - Allow to cool completely before proceeding
 
 ### 26. PCB Base Mounting
 
-- Secure the main PCB to the case base using M3 screws
+- Secure the main PCB to the case base using M2.5 screws
 - Ensure the PCB sits flat and all mounting holes align properly
 - Do not overtighten the screws to avoid cracking the plastic
 
@@ -251,16 +246,17 @@ With the PCB assembly complete, it's time to install everything in the 3D printe
 
 - Mount the LCD display in the front panel opening
 - Install the rotary encoder (HW-040) in its designated position
-- Secure both components with their respective nuts and washers
+- Secure both components using their respective screws (LCD) and nut plus washer (encoder)
 
 ### 28. Rear Panel Assembly
 
-- Install the SMA connector (SO-239) in the rear panel
+- Install the SO-239 connector (chassis-mounted female PL connector) on the rear panel
 - Ensure the connector is properly seated and tightened
+- One of the screws, on the inside of the enclosure, must include a ground lug in order to solder the RF coaxial cable shield to it
 
 ### 29. RF Connection
 
-- Connect the RF output from the PCB to the rear SMA connector using RG-316 coaxial cable
+- Connect the RF output of the PCB to the rear SO-239 connector using RG-316 coaxial cable
 - Solder connections carefully, ensuring good RF continuity
 - Keep cable length as short as practical to minimize losses
 
@@ -274,8 +270,9 @@ With the PCB assembly complete, it's time to install everything in the 3D printe
 
 - Carefully position the front panel with LCD and encoder
 - Route all cables neatly inside the case to avoid pinching
-- Secure the front panel to the base using M3 screws
-- Install the rear panel and secure with M3 screws
+- Insert the front and rear panels into their respective slots in the base
+- Insert the sliding cover into the internal guides of the upper enclosure, making sure the notch faces outward and toward the front. The front of the enclosure has a slightly angled edge
+- Insert the upper enclosure so that the front and rear sections seat properly into their corresponding slots
 - Perform a final visual inspection of all connections
 
 <div style={{textAlign: 'center', marginBottom: '20px'}}>
@@ -288,6 +285,5 @@ Your WSPR Beakon is now fully assembled and ready for firmware installation and 
 
 :::tip Assembly Tips
 - Take photos during disassembly for reference if you need to make modifications later
-- Label cables if you have multiple similar connections
 - Test the unit before final case closure to ensure everything works properly
 :::

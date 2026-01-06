@@ -10,7 +10,7 @@ This section covers the design, construction, and tuning of filters for your WSP
 
 Since operation will be conducted at very low power, we attempted to build filters with common and inexpensive components: axial inductors (their appearance is similar to resistors with a green body) and normal low-voltage capacitors (50 volts). We believed that avoiding the need to wind toroids and obtaining high-quality NP0 type capacitors (which is obviously a better option) would make the construction of these filters more feasible for a wider audience. This does not prevent the same support (PCB) from being used to build them with higher quality components than those proposed here.
 
-Several filter units were built for each band, verifying that in most cases they are replicable without major modifications; logically this will depend on the tolerance of the different components and in some cases fine adjustment may be necessary, generally by varying the value of some capacitor, and especially for centering the working frequency of units that incorporate notch filters; adjustment of the center frequency of these "notch" filters is much faster and simpler if an adjustment trimmer with a value slightly higher than that of the corresponding fixed capacitor(s) is used, which it would replace. Its use is therefore recommended (see the "Notes" section in the filter components table).
+Several filter units were built for each band, verifying that in most cases they are replicable without major modifications. Naturally, this depends on the tolerance of the different components, and in some cases fine tuning may be required, usually by changing the value of a capacitor, especially to center the operating frequency of units that incorporate “notch” filters. Adjusting the center frequency of these notch filters is much faster and simpler when using a trimmer with a value slightly higher than that of the corresponding fixed capacitor(s) it replaces; therefore, its use is recommended (see the “Notes” section in the filter components table).
 
 ## Mandatory Testing Requirements
 
@@ -148,11 +148,11 @@ The component values that will be used as starting points for the construction o
 
 - **Inductors**: Axial inductors with green body (similar appearance to resistors)
 - **Capacitors**: Normal low-voltage capacitors (50V rating)
-- **Trimmers**: Can be substituted for specific capacitors to allow fine-tuning of notch frequencies
+- **Trimmers**: They can replace the specific capacitors to allow fast and easy adjustment of the notch frequency
 - **Series/Parallel combinations**: Some values are achieved by combining multiple components
 
 :::info Trimmer Recommendations
-For easier adjustment of notch frequencies, consider using trimmer capacitors with values slightly higher than the fixed capacitor(s) they replace. This allows for precise frequency centering during testing.
+For easier adjustment of notch frequencies, consider using trimmer capacitors with values slightly higher than the fixed capacitor(s) they replace. This allows fast and precise frequency centering during testing.
 :::
 
 ## Component Sourcing
@@ -421,22 +421,6 @@ To proceed with filter adjustment and verification (**MANDATORY**), they must be
     <img src={require('@site/static/img/wspr-beakon-filter-calibration-4.webp').default} alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
   </div>
 </div>
-### Alternative Testing Method
-
-Another option is to use a pair of female SMA connectors that can be located on the main board for connection to the measuring equipment: on one hand, the output one marked as "RF OUT", and on the other hand, one that we will temporarily solder on the bottom of the main board, taking its central pin to the "IN" position of the filters (formed by two pins) and soldering its two lateral pins (ground) to the area provided for this purpose on the board.
-
-<div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
-  <div style={{textAlign: 'center', flex: 1}}>
-    <img src={require('@site/static/img/wspr-beakon-filter-calibration-5.webp').default} alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
-  </div>
-  <div style={{textAlign: 'center', flex: 1}}>
-    <img src={require('@site/static/img/wspr-beakon-filter-calibration-6.webp').default} alt="Filter calibration" style={{maxWidth: '500px', width: '100%'}} />
-  </div>
-</div>
-
-:::warning Important Testing Precautions
-If this last connection option to the measuring equipment is going to be used, it is highly recommended to start with the construction of the filters before soldering any other element on the main board, to avoid damage to components in a bad maneuver with the soldering iron. If this connection option is going to be used when the main board already has its components soldered and installed, it is essential to disconnect the Si5351 RF module while adjusting the filters.
-:::
 
 ## Expected Filter Response
 

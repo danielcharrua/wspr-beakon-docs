@@ -4,10 +4,6 @@ sidebar_position: 2
 
 # Ejemplos de Implementación
 
-:::info
-Para mayor comodidad, hay kits de componentes preseleccionados disponibles para ayudarte a replicar estas construcciones. Ver [Opciones de Kit](/docs/kit-options) para detalles e información de pedidos.
-:::
-
 Esta sección muestra la versatilidad y modularidad del proyecto WSPR Beakon a través de diferentes ejemplos de implementación. El diseño básico puede ser mejorado y adaptado para varios casos de uso mientras mantiene la funcionalidad central.
 
 ## WSPR Beakon Básico
@@ -58,15 +54,15 @@ El sistema central WSPR Beakon con sincronización GPS representa la implementac
 
 **Características:**
 
-- Sincronización de tiempo basada en GPS
+- Sincronización de tiempo basada en GPS o NTP (WiFi)
 - Operación multibanda con selección manual de filtros
-- Pantalla LCD con interfaz de encoder
+- Pantalla LCD e interfaz de usuario con encoder
 - Diseño compacto adecuado para operación portátil
 - Carcasa impresa en 3D opcional disponible
 
 ## Versión Mejorada "Mad Max"
 
-Esta implementación demuestra qué tan fácilmente el diseño básico puede ser mejorado con un amplificador RF para mayor potencia de salida. Este ejemplo opera en configuración de banda única y muestra la modularidad del proyecto sin requerir una carcasa formal.
+This implementation demonstrates how easily the basic design can be enhanced with an RF amplifier to achieve higher output power. This example operates in a manual filter-switching configuration and showcases the project’s modularity without requiring a formal enclosure.
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
   <img src={require('@site/static/img/wspr-beakon-mad-max.webp').default} alt="WSPR Beakon - Versión Mad Max" style={{maxWidth: '600px', width: '100%'}} />
@@ -98,13 +94,13 @@ Esta implementación demuestra qué tan fácilmente el diseño básico puede ser
 
 - Toda la funcionalidad básica de WSPR Beakon
 - Amplificador RF integrado para mayor potencia de salida
-- Operación optimizada para banda única
+- Operación multibanda con intervención manual
 - Construcción abierta para modificaciones fáciles
 - Demuestra el enfoque de mejora modular
 
 ## Sistema Multibanda Avanzado
 
-Esta implementación representa la versión más completa, con selección automática de banco de filtros y amplificación integrada. El sistema opera desde fuente de 12V e incluye control sofisticado de relés para cambio de banda sin interrupciones.
+Esta implementación representa la versión más completa, con selección automática de banco de filtros y amplificación integrada. El sistema opera desde fuente AC 220V o DC 12V e incluye control automático de relés para cambio de banda sin interrupciones.
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
   <img src={require('@site/static/img/wspr-beakon-enhanced-unit.webp').default} alt="WSPR Beakon - Unidad mejorada" style={{maxWidth: '600px', width: '100%'}} />
@@ -139,12 +135,11 @@ Esta implementación representa la versión más completa, con selección autom�
 
 **Características:**
 
-- Banco de filtros automático con conmutación por relé
 - Amplificador RF integrado
-- Operación con fuente de 12V
+- Operación con fuente AC 220V o DC 12V
 - Integración GPS para temporización precisa
-- Sistema de control de relés para cambios de banda sin interrupciones
-- Carcasa profesional para instalación permanente
+- Sistema de control de relés para cambios automáticos de filtros
+- Carcasa comercial con mecanización personalizada
 - Operación multibanda sin intervención manual
 
 ## Modularidad del Proyecto
@@ -154,7 +149,7 @@ Estos ejemplos demuestran la modularidad inherente del diseño WSPR Beakon:
 - **Funcionalidad central** permanece consistente en todas las implementaciones
 - **Módulos de mejora** pueden añadirse según se necesite
 - **Integración mecánica** se adapta a diferentes casos de uso
-- **Requerimientos de potencia** escalan con la complejidad
+- **Requerimientos de potencia** escalables según necesidades
 - **Sistemas de control** mantienen la misma interfaz de usuario
 
 Ya sea que necesites una baliza portátil simple o una estación multibanda sofisticada, la arquitectura WSPR Beakon proporciona una base sólida para tus requerimientos específicos.

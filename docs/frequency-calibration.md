@@ -20,8 +20,7 @@ Proper frequency calibration is essential for WSPR operation. Signals outside th
 
 For calibration, you'll need:
 
-- A transceiver (or receiver) that is reasonably frequency-accurate with PC connection
-- Any modern equipment used for digital modes should suffice
+- A transceiver (or receiver) that is reasonably frequency-accurate with PC connection. Any modern equipment used for digital modes should suffice
 - WSJT-X software (downloadable from the official website)
 - Access to the online calibration calculator
 
@@ -33,7 +32,7 @@ For calibration, you'll need:
 
 2. **Install appropriate filter**: Install the filter for the band you want to calibrate
 
-3. **Connect dummy load**: Install a dummy load on the main board's SMA connector (or an antenna as alternative)
+3. **Connect dummy load**: Install a dummy load on the RF output connector (or an antenna as a better alternative)
 
 4. **Power up the assembly**: Apply power to start the system
 
