@@ -50,7 +50,7 @@ Para usar este ensamblaje en la práctica conectándolo a una antena real, **DEB
 :::
 
 :::danger Filtrado RF Obligatorio
-**EL USO DE UN FILTRO EN LA SALIDA DEL TRANSMISOR ES ABSOLUTAMENTE IMPERATIVO.** El módulo RF genera múltiples armónicos que deben ser eliminados antes de poner una señal al aire. La placa del circuito incluye sockets para insertar un filtro pasa-bajos, que generalmente opera en modo de banda única, por lo que la experimentación en múltiples bandas usualmente requiere sustituir un filtro por otro. **SE REITERA EL USO OBLIGATORIO DE ELEMENTOS DE FILTRADO RF.**
+**EL USO DE UN FILTRO EN LA SALIDA DEL TRANSMISOR ES ABSOLUTAMENTE IMPERATIVO.** El módulo RF genera múltiples armónicos que deben ser eliminados antes de poner una señal al aire. La placa del circuito incluye zócalos para insertar un filtro pasa-bajos, que generalmente opera en modo de banda única, por lo que la experimentación en múltiples bandas usualmente requiere sustituir un filtro por otro. **SE REITERA EL USO OBLIGATORIO DE ELEMENTOS DE FILTRADO RF.**
 :::
 
 :::warning Seguridad de Alimentación

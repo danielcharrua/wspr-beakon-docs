@@ -372,7 +372,7 @@ La PCB propuesta, para la cual se proporciona un enlace de descarga de archivo G
 
 Las placas de filtro se conectan a la placa principal de ensamblaje a través de pines insertables, haciéndolas muy fácilmente intercambiables. Una buena manera de asegurar que estos pines estén bien alineados al soldar y que las placas puedan ser fácilmente intercambiadas después es seguir estos pasos:
 
-1. **Instalación de Socket**: Suelde los dos zócalos hembra de 4 pines en la placa principal, presionándolos contra la placa durante la soldadura para que estén correctamente asentados y formen 90 grados con respecto a la placa
+1. **Instalación de Zócalos**: Suelde los dos zócalos hembra de 4 pines en la placa principal, presionándolos contra la placa durante la soldadura para que estén correctamente asentados y formen 90 grados con respecto a la placa
 
 2. **Inserción de Pines**: Inserte las dos tiras de pines macho de 4 pines, a través de su lado largo, en los zócalos hembra ya soldados
 
@@ -441,5 +441,5 @@ Los gráficos que obtendremos en el equipo de medición, dependiendo del tipo de
 </div>
 
 :::warning Importante - Intercambio de Filtros
-Al intercambiar filtros en la placa principal para cambiar bandas, se debe prestar especial atención para asegurar que la serigrafía "IN" del filtro mire hacia el módulo RF (y coincida con la serigrafía "RF IN" de la placa principal), y que insertemos los 4 pines de ambos zócalos. Puede suceder, si no prestamos atención, que uno de los pines quede fuera de su socket, lo que llevaría a un comportamiento totalmente anómalo del conjunto.
+Al intercambiar filtros en la placa principal para cambiar bandas, se debe prestar especial atención para asegurar que la serigrafía "IN" del filtro mire hacia el módulo RF (y coincida con la serigrafía "RF IN" de la placa principal), y que insertemos los 4 pines de ambos zócalos. Puede suceder, si no prestamos atención, que uno de los pines quede fuera de su zócalo, lo que llevaría a un comportamiento totalmente anómalo del conjunto.
 :::

@@ -62,7 +62,7 @@ El sistema central WSPR Beakon con sincronización GPS representa la implementac
 
 ## Versión Mejorada "Mad Max"
 
-This implementation demonstrates how easily the basic design can be enhanced with an RF amplifier to achieve higher output power. This example operates in a manual filter-switching configuration and showcases the project’s modularity without requiring a formal enclosure.
+Esta implementación demuestra lo fácilmente que el diseño básico puede mejorarse mediante un amplificador de RF para obtener una mayor potencia de salida. Este ejemplo funciona con una configuración de conmutación manual de filtros y pone de manifiesto la modularidad del proyecto sin necesidad de una carcasa formal.
 
 <div style={{textAlign: 'center', marginBottom: '30px'}}>
   <img src={require('@site/static/img/wspr-beakon-mad-max.webp').default} alt="WSPR Beakon - Versión Mad Max" style={{maxWidth: '600px', width: '100%'}} />

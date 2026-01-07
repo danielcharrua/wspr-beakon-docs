@@ -194,7 +194,7 @@ With this upgrade we provide the capability to power the circuit at 12 (or 13.8)
 
 | Component | Qty | Notes | Link |
 |-----------|-----|-------|------|
-| **Diode 1N5819** | 1 | Schottky diode for polarity protection | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=71-1N5819&cPath=970) |
+| **Diode 1N5819** | 1 | Schottky diode for power supply protection | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=71-1N5819&cPath=970) |
 | **Buck DC-DC Converter** | 1 | DC-DC 5V output converter | [AliExpress](https://es.aliexpress.com/item/1005008678729834.html) |
 | **Dupont Cables** | 2 | With female end for 12V input wiring to main board | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
 | **4-pin Female Sockets** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |

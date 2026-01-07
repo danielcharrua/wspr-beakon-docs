@@ -54,16 +54,16 @@ La versión más básica se alimenta desde el conector USB del módulo ESP32 y c
     <div style={{fontWeight: 'bold'}}>Cables Dupont</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src={require('@site/static/img/parts/wspr-beakon-fem-4-pin.webp').default} alt="Socket Hembra 4 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
-    <div style={{fontWeight: 'bold'}}>Socket Hembra 4 pines</div>
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-4-pin.webp').default} alt="Zócalo Hembra 4 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <div style={{fontWeight: 'bold'}}>Zócalo Hembra 4 pines</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src={require('@site/static/img/parts/wspr-beakon-fem-7-pin.webp').default} alt="Socket Hembra 7 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
-    <div style={{fontWeight: 'bold'}}>Socket Hembra 7 pines</div>
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-7-pin.webp').default} alt="Zócalo Hembra 7 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <div style={{fontWeight: 'bold'}}>Zócalo Hembra 7 pines</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src={require('@site/static/img/parts/wspr-beakon-fem-19-pin.webp').default} alt="Socket Hembra 19 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
-    <div style={{fontWeight: 'bold'}}>Socket Hembra 19 pines</div>
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-19-pin.webp').default} alt="Zócalo Hembra 19 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <div style={{fontWeight: 'bold'}}>Zócalo Hembra 19 pines</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
     <img src={require('@site/static/img/parts/wspr-beakon-male-4-pin.webp').default} alt="Tira de Pines Macho 4 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
@@ -104,9 +104,9 @@ La versión más básica se alimenta desde el conector USB del módulo ESP32 y c
 | **Condensador Electrolítico** | 1 | 1000μF 25V, valores no críticos | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=211004075&cPath=968) |
 | **Resistencias** | 3 | 100Ω 1W | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=514310001&cPath=921) |
 | **Cables Dupont** | 9 | Hembra-hembra, para LCD y codificador | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
-| **Socket Hembra 4 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **Socket Hembra 7 pines** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **Socket Hembra 19 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
+| **Zócalo Hembra 4 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
+| **Zócalo Hembra 7 pines** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
+| **Zócalo Hembra 19 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
 | **Tira de Pines Macho 4 pines** | 3 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Tira de Pines Macho 5 pines** | 1 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Separadores Metálicos** | 7 | M2.5 x 11mm hembra-hembra | [AliExpress](https://es.aliexpress.com/item/1005001478301407.html) |
@@ -135,8 +135,8 @@ Con esta mejora proporcionamos la capacidad de no depender de una red WiFi para 
     <div style={{fontWeight: 'bold'}}>Módulo GPS NEO-7M</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src={require('@site/static/img/parts/wspr-beakon-fem-5-pin.webp').default} alt="Socket Hembra 5 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
-    <div style={{fontWeight: 'bold'}}>Socket Hembra 5 pines</div>
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-5-pin.webp').default} alt="Zócalo Hembra 5 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <div style={{fontWeight: 'bold'}}>Zócalo Hembra 5 pines</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
     <img src={require('@site/static/img/parts/wspr-beakon-screw-separators.webp').default} alt="Separadores Metálicos" style={{maxWidth: '120px', marginBottom: '8px'}} />
@@ -153,7 +153,7 @@ Con esta mejora proporcionamos la capacidad de no depender de una red WiFi para 
 | Componente | Cant | Notas | Enlace |
 |------------|------|-------|--------|
 | **Módulo GPS NEO-7M** | 1 | Con antena integrada y conector SMA para antena externa | [AliExpress](https://es.aliexpress.com/item/1005006152967959.html) |
-| **Socket Hembra 5 pines** | 1 | Para el nuevo módulo GPS | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
+| **Zócalo Hembra 5 pines** | 1 | Para el nuevo módulo GPS | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
 | **Separadores Metálicos** | 2 | M2.5 x 11mm hembra-hembra, para asegurar placa principal a carcasa y placa módulo RF sobre placa principal | [AliExpress](https://es.aliexpress.com/item/1005001478301407.html) |
 | **Tornillos** | 4 | M2.5 x 5mm para separadores metálicos | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
 
@@ -181,8 +181,8 @@ Con esta mejora proporcionamos la capacidad de alimentar el circuito a 12 (o 13.
     <div style={{fontWeight: 'bold'}}>Cables Dupont</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src={require('@site/static/img/parts/wspr-beakon-fem-4-pin.webp').default} alt="Socket Hembra 4 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
-    <div style={{fontWeight: 'bold'}}>Sockets Hembra 4 pines</div>
+    <img src={require('@site/static/img/parts/wspr-beakon-fem-4-pin.webp').default} alt="Zócalo Hembra 4 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <div style={{fontWeight: 'bold'}}>Zócalos Hembra 4 pines</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
     <img src={require('@site/static/img/parts/wspr-beakon-male-pin.webp').default} alt="Tira de Pines Macho 2 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
@@ -194,10 +194,10 @@ Con esta mejora proporcionamos la capacidad de alimentar el circuito a 12 (o 13.
 
 | Componente | Cant | Notas | Enlace |
 |------------|------|-------|--------|
-| **Diodo 1N5819** | 1 | Diodo Schottky para protección de polaridad | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=71-1N5819&cPath=970) |
+| **Diodo 1N5819** | 1 | Diodo Schottky para protección de alimentación | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=71-1N5819&cPath=970) |
 | **Convertidor Buck DC-DC** | 1 | Convertidor DC-DC salida 5V | [AliExpress](https://es.aliexpress.com/item/1005008678729834.html) |
 | **Cables Dupont** | 2 | Con extremo hembra para cableado de entrada 12V a placa principal | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
-| **Sockets Hembra 4 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
+| **Zócalos Hembra 4 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
 | **Pines Macho 1 pin** | 4 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Tira de Pines Macho 2 pines** | 1 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 
@@ -217,8 +217,8 @@ Para habilitar esta mejora, debemos haber implementado previamente la mejora nú
     <div style={{fontWeight: 'bold'}}>IC UDN2981</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
-    <img src={require('@site/static/img/parts/wspr-beakon-ic-socket-18pin.webp').default} alt="Socket IC 18 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
-    <div style={{fontWeight: 'bold'}}>Socket IC 18 pines</div>
+    <img src={require('@site/static/img/parts/wspr-beakon-ic-socket-18pin.webp').default} alt="Zócalo IC 18 pines" style={{maxWidth: '120px', marginBottom: '8px'}} />
+    <div style={{fontWeight: 'bold'}}>Zócalo IC 18 pines</div>
   </div>
   <div style={{width: '160px', textAlign: 'center'}}>
     <img src={require('@site/static/img/parts/wspr-beakon-dupont-cable-fem-fem.webp').default} alt="Cables Dupont" style={{maxWidth: '120px', marginBottom: '8px'}} />
@@ -235,7 +235,7 @@ Para habilitar esta mejora, debemos haber implementado previamente la mejora nú
 | Componente | Cant | Notas | Enlace |
 |------------|------|-------|--------|
 | **IC UDN2981** | 1 | Circuito integrado driver de 8 canales | [AliExpress](https://es.aliexpress.com/item/1005006888538620.html) |
-| **Socket IC 18 pines** | 1 | Para el circuito integrado UDN2981 | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=999127304&cPath=1380) |
+| **Zócalo IC 18 pines** | 1 | Para el circuito integrado UDN2981 | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=999127304&cPath=1380) |
 | **Cables Dupont** | 8 | Con extremo hembra para cableado de salidas a relés externos | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
 | **Cables Dupont de Tierra Extra** | 4 | Opcional, con extremo hembra para conexiones de tierra a periféricos externos | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
 | **Tira de Pines Macho 8 pines** | 1 | Para salidas de relé, cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |

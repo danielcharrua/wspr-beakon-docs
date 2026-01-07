@@ -22,11 +22,11 @@ Al ensamblar los diversos componentes en la placa principal, se recomienda segui
 
 - Suelde los dos zócalos hembra de 4 pines para los filtros, presionándolos contra la placa durante la soldadura para que estén correctamente asentados y formen 90 grados con respecto a la placa
 
-## 3. Instalación de Socket ESP32
+## 3. Instalación de Zócalo ESP32
 
 - Suelde los zócalos de pines hembra para el ESP32, cuidando que estén correctamente asentados y por tanto formen 90 grados con respecto a la placa
 
-## 4. Instalación de Socket del Módulo RF Si5351
+## 4. Instalación de Zócalo del Módulo RF Si5351
 
 - Suelde los zócalos de pines hembra para el módulo RF (Si5351), cuidando que estén correctamente asentados y por tanto formen 90 grados con respecto a la placa
 
@@ -88,7 +88,7 @@ La deriva final del módulo se puede comprobar (preferiblemente en 10 metros por
 
 ## 10. Instalación de Módulos
 
-- Inserte el módulo ESP32 en su socket respectivo (su conector USB quedará hacia fuera de la placa; verifique que la nomenclatura de pines del ESP32 y de la placa principal coincidan)
+- Inserte el módulo ESP32 en su zócalo respectivo (su conector USB quedará hacia fuera de la placa; verifique que la nomenclatura de pines del ESP32 y de la placa principal coincidan)
 - Inserte el módulo Si5351 (asegúrelo con separadores M2.5 x 11mm a la placa principal)
 - Inserte el filtro correspondiente a la banda donde se usará el transmisor WSPR (oriéntelo correctamente en la placa; el lado "IN" debe mirar hacia el Si5351)
 
@@ -113,9 +113,9 @@ La placa debería verse aproximadamente así:
 
 Si desea actualizar la placa con la "Mejora 1" (GPS), siga estos pasos:
 
-### 12. Instalación de Socket GPS
+### 12. Instalación de Zócalo GPS
 
-- Suelde un socket hembra de 5 pines en la posición correspondiente en la placa principal, cuidando que esté correctamente asentado y por tanto forme 90 grados con respecto a la placa
+- Suelde un zócalo hembra de 5 pines en la posición correspondiente en la placa principal, cuidando que esté correctamente asentado y por tanto forme 90 grados con respecto a la placa
 
 ### 13. Preparación de Pines del Módulo GPS
 
@@ -139,11 +139,11 @@ La placa GPS viene con pines que sobresalen paralelos a la placa, y deben doblar
 
 ### 14. Recorte de Pines GPS
 
-Los pines, una vez enderezados, son más largos de lo necesario y por tanto no se asientan completamente en el socket hembra. Córtelos a aproximadamente 6 milímetros, midiendo desde la pieza plástica.
+Los pines, una vez enderezados, son más largos de lo necesario y por tanto no se asientan completamente en el zócalo hembra. Córtelos a aproximadamente 6 milímetros, midiendo desde la pieza plástica.
 
 ### 15. Instalación del Módulo GPS
 
-- Inserte el módulo GPS en su socket y asegúrelo con separadores M2.5 x 11mm a la placa principal
+- Inserte el módulo GPS en su zócalo y asegúrelo con separadores M2.5 x 11mm a la placa principal
 
 Esta área de la placa debería verse aproximadamente así:
 
@@ -170,7 +170,7 @@ Si desea actualizar la placa con la "Mejora 2" (alimentación externa de 12V), s
 
 ### 18. Instalación de Pines en las Esquinas
 
-- Inserte solo 4 pines macho (desde el lado largo) en las 4 esquinas del rectángulo formado por ambos zócalos hembra (posiciones marcadas en la placa como GND, 12V, GND, 5V). Los dos pines centrales de cada socket hembra de 4 pines no se usan
+- Inserte solo 4 pines macho (desde el lado largo) en las 4 esquinas del rectángulo formado por ambos zócalos hembra (posiciones marcadas en la placa como GND, 12V, GND, 5V). Los dos pines centrales de cada zócalo hembra de 4 pines no se usan
 
 <div style={{display: 'flex', justifyContent: 'space-around', gap: '20px', marginBottom: '20px'}}>
   <div style={{textAlign: 'center', flex: 1}}>
@@ -204,9 +204,9 @@ Si desea actualizar la placa con la "Mejora 3" (control de relé externo), siga 
 Para que esta parte funcione, es necesario haber implementado previamente la "Mejora 2"
 :::
 
-### 21. Socket del IC UDN2981
+### 21. Zócalo del IC UDN2981
 
-- Suelde el socket de 18 pines para el IC UDN2981 (con la "muesca" orientada como se muestra en la serigrafía de la placa principal)
+- Suelde el zócalo de 18 pines para el IC UDN2981 (con la "muesca" orientada como se muestra en la serigrafía de la placa principal)
 
 ### 22. Conectores de salida de relé
 
@@ -218,7 +218,7 @@ Para que esta parte funcione, es necesario haber implementado previamente la "Me
 
 ### 24. Instalación del IC UDN2981
 
-- Inserte el IC UDN2981 en su socket (con la "muesca" orientada como se muestra en la serigrafía de la placa principal)
+- Inserte el IC UDN2981 en su zócalo (con la "muesca" orientada como se muestra en la serigrafía de la placa principal)
 
 Esta área de la placa debería verse aproximadamente así:
 
