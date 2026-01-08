@@ -100,7 +100,7 @@ Antes de subir el firmware, debes modificar las variables de configuración en l
 
 ```cpp
 // Opciones disponibles: SI5351_DRIVE_2MA, SI5351_DRIVE_4MA, SI5351_DRIVE_6MA, SI5351_DRIVE_8MA
-// Potencia de salida (valores probados): 2mA = 1mW, 4mA = 2mW, 6mA = 5mW, 8mA = 10mW
+// Potencia de salida (valores probados): SI5351_DRIVE_2MA = 1mW, SI5351_DRIVE_4MA = 2mW, SI5351_DRIVE_6MA = 5mW, SI5351_DRIVE_8MA = 10mW
 #define SI5351_DRIVE_LEVEL SI5351_DRIVE_4MA
 ```
 
@@ -127,21 +127,22 @@ Configura frecuencias, calibración del cristal y pines de relé para cada banda
 ```cpp
 } wsprFrequencies[] = {
   // Frecuencia(Hz), Freq_Cristal(Hz), Etiqueta, Pin_Relé
-  {144489000UL, 25000000UL, "144.489 MHz 2m",  0},    // banda 2m (no soportada por el Si5351)
-  {70105048UL,  25000000UL, "70.091 MHz 4m",   0},    // banda 4m (no soportada por el Si5351)
-  {50303500UL,  25000000UL, "50.293 MHz 6m",   0},    // banda 6m (no soportada por el Si5351)
-  {28131120UL,  25000000UL, "28.124 MHz 10m",  12},   // banda 10m
-  {24924600UL,  25000000UL, "24.924 MHz 12m",  12},   // banda 12m
-  {21099330UL,  25000000UL, "21.094 MHz 15m",  14},   // banda 15m
-  {18104600UL,  25000000UL, "18.104 MHz 17m",  14},   // banda 17m
-  {14099615UL,  25000000UL, "14.095 MHz 20m",  27},   // banda 20m
-  {10142033UL,  25000000UL, "10.138 MHz 30m",  27},   // banda 30m
-  {7041356UL,   25000000UL, "7.038 MHz 40m",   26},   // banda 40m
-  {5364700UL,   25000000UL, "5.364 MHz 60m",   26},   // banda 60m
-  {3570732UL,   25000000UL, "3.568 MHz 80m",   25},   // banda 80m
-  {1838426UL,   25000000UL, "1.836 MHz 160m",  33},   // banda 160m
-  {475786UL,    25000000UL, "0.474 MHz 630m",  32},   // banda 630m
-  {136000UL,    25000000UL, "0.136 MHz 2200m", 32}    // banda 2200m
+  {144489000UL, 25000000UL, "144.489 MHz 2m",  0},    // 2m band (not supported by the Si5351)
+  {70091000UL,  25000000UL, "70.091 MHz 4m",   0},    // 4m band (not supported by the Si5351)
+  {50293000UL,  25000000UL, "50.293 MHz 6m",   0},    // 6m band (not supported by the Si5351)
+  {40680000UL,  25000000UL, "40.680 MHz 8m",   0},    // 8m band
+  {28124600UL,  25000000UL, "28.124 MHz 10m",  12},   // 10m band  
+  {24924600UL,  25000000UL, "24.924 MHz 12m",  12},   // 12m band
+  {21094600UL,  25000000UL, "21.094 MHz 15m",  14},   // 15m band  
+  {18104600UL,  25000000UL, "18.104 MHz 17m",  14},   // 17m band
+  {14095600UL,  25000000UL, "14.095 MHz 20m",  27},   // 20m band  
+  {10138700UL,  25000000UL, "10.138 MHz 30m",  27},   // 30m band  
+  {7038600UL,   25000000UL, "7.038 MHz 40m",   26},   // 40m band  
+  {5364700UL,   25000000UL, "5.364 MHz 60m",   26},   // 60m band
+  {3568600UL,   25000000UL, "3.568 MHz 80m",   25},   // 80m band  
+  {1836600UL,   25000000UL, "1.836 MHz 160m",  33},   // 160m band  
+  {474200UL,    25000000UL, "0.474 MHz 630m",  32},   // 630m band
+  {136000UL,    25000000UL, "0.136 MHz 2200m", 32}    // 2200m band
 };
 ```
 
