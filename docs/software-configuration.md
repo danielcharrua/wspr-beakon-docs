@@ -166,3 +166,49 @@ The following ESP32 pins are used for band relay control:
 :::danger Critical Post-Upload Step
 **Very Important**: Once new code is uploaded to the ESP32, it is necessary to make a band selection using the encoder (see next section) for the microcontroller to initialize correctly. Otherwise, the assembly operation will be erratic.
 :::
+
+### Rotating Band Transmission Functionality
+
+The code can be configured so that the equipment transmits alternately on different bands in a rotating manner; this can be useful for someone using a multiband antenna.
+With this option enabled, the transmission sequence would be as follows: I transmit on band “A”; I rest for “X” minutes; I transmit on band “B”; I rest for “X” minutes; I transmit on band “C”; I rest for “X” minutes; then the cycle starts again by transmitting once more on band “A”.
+
+Before enabling this functionality, the following premises must be taken into account:
+
+:::warning Warning
+A filter switching system that covers the bands to be used must be enabled
+:::
+
+- An antenna matched to the bands to be used must be employed
+- The minimum time between transmissions will be 4 minutes (this implies two minutes of rest between transmissions)
+- As many rotating bands as desired can be assigned
+- The rotary encoder will no longer be used to select the operating band, since the bands will alternate according to the selection made in the code. In any case, once the new code is uploaded, a band selection must be made with the encoder in order to correctly initialize the device
+
+To enable this functionality, the following line of code must be changed:
+
+```cpp
+#define WSPR_AUTO_ROTATION false // Set to true to auto rotate frequencies after each transmission
+```
+
+Change the `WSPR_AUTO_ROTATION` parameter from `false` to `true`, and then add, at the beginning of the lines of code corresponding to the different bands, a pair of forward slashes `//` on each of the bands that we do not want to be part of the rotating transmission. For example, in this block of code lines, only the 10, 15, and 20 meter bands have been left enabled (a typical case for someone who wants to use this functionality with a standard triband antenna):
+
+```cpp
+} wsprFrequencies[] = {
+  // Frecuencia(Hz), Freq_Cristal(Hz), Etiqueta, Pin_Relé
+  //{144489000UL, 25000000UL, "144.489 MHz 2m",  0},    // 2m band (not supported by the Si5351)
+  //{70091000UL,  25000000UL, "70.091 MHz 4m",   0},    // 4m band (not supported by the Si5351)
+  //{50293000UL,  25000000UL, "50.293 MHz 6m",   0},    // 6m band (not supported by the Si5351)
+  //{40680000UL,  25000000UL, "40.680 MHz 8m",   0},    // 8m band
+  {28124600UL,  25000000UL, "28.124 MHz 10m",  12},     // 10m band  
+  //{24924600UL,  25000000UL, "24.924 MHz 12m",  12},   // 12m band
+  {21094600UL,  25000000UL, "21.094 MHz 15m",  14},     // 15m band  
+  //{18104600UL,  25000000UL, "18.104 MHz 17m",  14},   // 17m band
+  {14095600UL,  25000000UL, "14.095 MHz 20m",  27},     // 20m band  
+  //{10138700UL,  25000000UL, "10.138 MHz 30m",  27},   // 30m band  
+  //{7038600UL,   25000000UL, "7.038 MHz 40m",   26},   // 40m band  
+  //{5364700UL,   25000000UL, "5.364 MHz 60m",   26},   // 60m band
+  //{3568600UL,   25000000UL, "3.568 MHz 80m",   25},   // 80m band  
+  //{1836600UL,   25000000UL, "1.836 MHz 160m",  33},   // 160m band  
+  //{474200UL,    25000000UL, "0.474 MHz 630m",  32},   // 630m band
+  //{136000UL,    25000000UL, "0.136 MHz 2200m", 32}    // 2200m band
+};
+```

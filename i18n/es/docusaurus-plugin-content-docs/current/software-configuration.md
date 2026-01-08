@@ -169,3 +169,49 @@ Los siguientes pines del ESP32 se usan para control de relés de banda:
 :::danger Paso Crítico Post-Subida
 **Muy Importante**: Una vez que se sube el nuevo código al ESP32, es necesario hacer una selección de banda usando el encoder (ver siguiente sección) para que el microcontrolador se inicialice correctamente. De lo contrario, el funcionamiento del ensamblaje será errático.
 :::
+
+### Funcionalidad de transmisión en bandas rotativas
+
+Se puede configurar el código para que el equipo haga la transmisión alternadamente en distintas bandas y de manera rotativa; esto puede ser útil para alguien que utilice una antena multibanda.
+Con esta opción activada, la secuencia de transmisión sería la siguiente: transmito en la banda “A”; hago “X” minutos de reposo; transmito en la banda ”B”; hago “X” minutos de reposo; transmito en la banda “C”; hago “X” minutos de reposo; comienzo de nuevo el ciclo volviendo a transmitir en la banda “A”.
+
+Antes de habilitar esta funcionalidad se deben tener en cuenta las siguientes premisas:
+
+:::warning Muy importante
+Se deberá habilitar un sistema de conmutación de filtros que contemple las bandas a utilizar
+:::
+
+- Se deberá usar una antena adaptada a las bandas a utilizar
+- El tiempo mínimo entre transmisiones será de 4 minutos (implica dos minutos de reposo entre transmisiones) 
+- Se pueden asignar tantas bandas rotativas como se desee
+- El encoder rotativo ya no servirá para escoger la banda de funcionamiento, pues estas se irán alternando según la elección que hagamos en el código. En todo caso, una vez cargado el nuevo código, debemos hacer una selección de banda con el encoder de cara a inicializar correctamente el dispositivo
+
+Para habilitar esta funcionalidad habrá que cambiar en esta línea de código:
+
+```cpp
+#define WSPR_AUTO_ROTATION false // Set to true to auto rotate frequencies after each transmission
+```
+
+Cambia el parametro `WSPR_AUTO_ROTATION` de `false` a `true`, y a continuación añade al comienzo de las líneas de código que corresponden a las distintas bandas, un par de barras inclinadas `//` sobre cada una de las bandas que no queremos que formen parte de la transmisión rotativa. Por ejemplo, en este bloque de líneas de código se dejaron habilitadas exclusivamente las bandas de 10, 15 y 20 metros (caso típico de alguien que quiera usar esta funcionalidad sobre la habitual antena tribanda):
+
+```cpp
+} wsprFrequencies[] = {
+  // Frecuencia(Hz), Freq_Cristal(Hz), Etiqueta, Pin_Relé
+  //{144489000UL, 25000000UL, "144.489 MHz 2m",  0},    // 2m band (not supported by the Si5351)
+  //{70091000UL,  25000000UL, "70.091 MHz 4m",   0},    // 4m band (not supported by the Si5351)
+  //{50293000UL,  25000000UL, "50.293 MHz 6m",   0},    // 6m band (not supported by the Si5351)
+  //{40680000UL,  25000000UL, "40.680 MHz 8m",   0},    // 8m band
+  {28124600UL,  25000000UL, "28.124 MHz 10m",  12},     // 10m band  
+  //{24924600UL,  25000000UL, "24.924 MHz 12m",  12},   // 12m band
+  {21094600UL,  25000000UL, "21.094 MHz 15m",  14},     // 15m band  
+  //{18104600UL,  25000000UL, "18.104 MHz 17m",  14},   // 17m band
+  {14095600UL,  25000000UL, "14.095 MHz 20m",  27},     // 20m band  
+  //{10138700UL,  25000000UL, "10.138 MHz 30m",  27},   // 30m band  
+  //{7038600UL,   25000000UL, "7.038 MHz 40m",   26},   // 40m band  
+  //{5364700UL,   25000000UL, "5.364 MHz 60m",   26},   // 60m band
+  //{3568600UL,   25000000UL, "3.568 MHz 80m",   25},   // 80m band  
+  //{1836600UL,   25000000UL, "1.836 MHz 160m",  33},   // 160m band  
+  //{474200UL,    25000000UL, "0.474 MHz 630m",  32},   // 630m band
+  //{136000UL,    25000000UL, "0.136 MHz 2200m", 32}    // 2200m band
+};
+```
