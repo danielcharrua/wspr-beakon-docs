@@ -97,20 +97,20 @@ La versión más básica se alimenta desde el conector USB del módulo ESP32 y c
 |------------|------|-------|--------|
 | **PCB Principal** | 1 | Archivo Gerber proporcionado para fabricación | [Descargar](https://github.com/danielcharrua/wspr-beakon/tree/main/pcb) |
 | **ESP32 Dev Kit C V4** | 1 | 38 pines, Tipo C | [AliExpress](https://es.aliexpress.com/item/1005007820190456.html) |
-| **Módulo RF Si5351** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005006233803174.html) |
+| **Módulo RF Si5351** | 1 | | [AliExpress](https://s.click.aliexpress.com/e/_c3yxom8f) |
 | **Codificador Rotatorio HW-40** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005006771313967.html) |
-| **Pantalla LCD** | 1 | 16x2 I2C | [AliExpress](https://es.aliexpress.com/item/1005006100081942.html) |
+| **Pantalla LCD** | 1 | 16x2 I2C | [AliExpress](https://s.click.aliexpress.com/e/_c2xxfDUF) |
 | **Condensador Cerámico** | 1 | 100nF 50V, valores no críticos | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=213004009&cPath=952) |
 | **Condensador Electrolítico** | 1 | 1000μF 25V, valores no críticos | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=211004075&cPath=968) |
 | **Resistencias** | 3 | 100Ω 1W | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=514310001&cPath=921) |
-| **Cables Dupont** | 9 | Hembra-hembra, para LCD y codificador | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
-| **Zócalo Hembra 4 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **Zócalo Hembra 7 pines** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **Zócalo Hembra 19 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
+| **Cables Dupont** | 9 | Hembra-hembra, para LCD y codificador | [AliExpress](https://s.click.aliexpress.com/e/_c4obbQdv) |
+| **Zócalo Hembra 4 pines** | 2 | | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
+| **Zócalo Hembra 7 pines** | 1 | | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
+| **Zócalo Hembra 19 pines** | 2 | | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
 | **Tira de Pines Macho 4 pines** | 3 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Tira de Pines Macho 5 pines** | 1 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
-| **Separadores Metálicos** | 7 | M2.5 x 11mm hembra-hembra | [AliExpress](https://es.aliexpress.com/item/1005001478301407.html) |
-| **Tornillos** | 14 | M2.5 x 5mm | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
+| **Separadores Metálicos** | 7 | M2.5 x 11mm hembra-hembra | [AliExpress](https://s.click.aliexpress.com/e/_c3LPABFt) |
+| **Tornillos** | 14 | M2.5 x 5mm | [AliExpress](https://s.click.aliexpress.com/e/_c2wg9gsr) |
 | **PCB de Filtro** | Según necesidad | La PCB tiene 10 unidades para cortar, mínimo 1 necesaria | [Descargar](https://github.com/danielcharrua/wspr-beakon/tree/main/pcb) |
 | **Inductores de Filtro** | Según necesidad | Axiales, según elección de banda | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=999208848&cPath=1335) |
 | **Condensadores de Filtro** | Según necesidad | Según elección de banda | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=213004001&cPath=952) |
@@ -153,9 +153,9 @@ Con esta mejora proporcionamos la capacidad de no depender de una red WiFi para 
 | Componente | Cant | Notas | Enlace |
 |------------|------|-------|--------|
 | **Módulo GPS NEO-7M** | 1 | Con antena integrada y conector SMA para antena externa | [AliExpress](https://es.aliexpress.com/item/1005006152967959.html) |
-| **Zócalo Hembra 5 pines** | 1 | Para el nuevo módulo GPS | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **Separadores Metálicos** | 2 | M2.5 x 11mm hembra-hembra, para asegurar placa principal a carcasa y placa módulo RF sobre placa principal | [AliExpress](https://es.aliexpress.com/item/1005001478301407.html) |
-| **Tornillos** | 4 | M2.5 x 5mm para separadores metálicos | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
+| **Zócalo Hembra 5 pines** | 1 | Para el nuevo módulo GPS | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
+| **Separadores Metálicos** | 2 | M2.5 x 11mm hembra-hembra, para asegurar placa principal a carcasa y placa módulo RF sobre placa principal | [AliExpress](https://s.click.aliexpress.com/e/_c4bcMydt) |
+| **Tornillos** | 4 | M2.5 x 5mm para separadores metálicos | [AliExpress](https://s.click.aliexpress.com/e/_c2wg9gsr) |
 
 ## Mejora 2: Fuente de Alimentación 12V
 
@@ -196,8 +196,8 @@ Con esta mejora proporcionamos la capacidad de alimentar el circuito a 12 (o 13.
 |------------|------|-------|--------|
 | **Diodo 1N5819** | 1 | Diodo Schottky para protección de alimentación | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=71-1N5819&cPath=970) |
 | **Convertidor Buck DC-DC** | 1 | Convertidor DC-DC salida 5V | [AliExpress](https://es.aliexpress.com/item/1005008678729834.html) |
-| **Cables Dupont** | 2 | Con extremo hembra para cableado de entrada 12V a placa principal | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
-| **Zócalos Hembra 4 pines** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
+| **Cables Dupont** | 2 | Con extremo hembra para cableado de entrada 12V a placa principal | [AliExpress](https://s.click.aliexpress.com/e/_c4MZVEVv) |
+| **Zócalos Hembra 4 pines** | 2 | | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
 | **Pines Macho 1 pin** | 4 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Tira de Pines Macho 2 pines** | 1 | Cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 
@@ -234,10 +234,10 @@ Para habilitar esta mejora, debemos haber implementado previamente la mejora nú
 
 | Componente | Cant | Notas | Enlace |
 |------------|------|-------|--------|
-| **IC UDN2981** | 1 | Circuito integrado driver de 8 canales | [AliExpress](https://es.aliexpress.com/item/1005006888538620.html) |
+| **IC UDN2981** | 1 | Circuito integrado driver de 8 canales | [AliExpress](https://s.click.aliexpress.com/e/_c4U5yebz) |
 | **Zócalo IC 18 pines** | 1 | Para el circuito integrado UDN2981 | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=999127304&cPath=1380) |
-| **Cables Dupont** | 8 | Con extremo hembra para cableado de salidas a relés externos | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
-| **Cables Dupont de Tierra Extra** | 4 | Opcional, con extremo hembra para conexiones de tierra a periféricos externos | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
+| **Cables Dupont** | 8 | Con extremo hembra para cableado de salidas a relés externos | [AliExpress](https://s.click.aliexpress.com/e/_c4MZVEVv) |
+| **Cables Dupont de Tierra Extra** | 4 | Opcional, con extremo hembra para conexiones de tierra a periféricos externos | [AliExpress](https://s.click.aliexpress.com/e/_c4MZVEVv) |
 | **Tira de Pines Macho 8 pines** | 1 | Para salidas de relé, cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **Tira de Pines Macho 4 pines** | 1 | Opcional, para conexión de tierra común a periféricos externos, cortar a medida | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 
@@ -309,9 +309,9 @@ Una carcasa impresa en 3D personalizada está disponible para el sistema princip
 |------------|------|-------|--------|
 | **Carcasa Impresa en 3D** | 1 | Archivos STL disponibles para descarga | [Descargar](https://github.com/danielcharrua/wspr-beakon/tree/main/3D) |
 | **Insertos Roscados M2.5** | 13 | 5mm de longitud, para fundir en plástico | [AliExpress](https://es.aliexpress.com/item/1005007653131713.html) |
-| **Conector SO-239** | 1 | Tipo montaje en panel de 4 agujeros | [AliExpress](https://es.aliexpress.com/item/1005004896899844.html) |
-| **Cable Coaxial** | 1 | RG316 o similar, 10-15cm de longitud para conexión RF interna | [AliExpress](https://es.aliexpress.com/item/1005003618138960.html) |
-| **Tornillos M2.5 x 5mm** | 13 | Para uso con insertos roscados | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
-| **Tornillos M3 x 8mm** | 4 | Para montaje del conector SO-239 | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
-| **Tuercas M3** | 4 | Para asegurar conector SO-239 | [AliExpress](https://es.aliexpress.com/item/1005006470779106.html) |
+| **Conector SO-239** | 1 | Tipo montaje en panel de 4 agujeros | [AliExpress](https://s.click.aliexpress.com/e/_c3DAbdXp) |
+| **Cable Coaxial** | 1 | RG316 o similar, 10-15cm de longitud para conexión RF interna | [AliExpress](https://s.click.aliexpress.com/e/_c3FMqGOx) |
+| **Tornillos M2.5 x 5mm** | 13 | Para uso con insertos roscados | [AliExpress](https://s.click.aliexpress.com/e/_c2wg9gsr) |
+| **Tornillos M3 x 8mm** | 4 | Para montaje del conector SO-239 | [AliExpress](https://s.click.aliexpress.com/e/_c2wg9gsr) |
+| **Tuercas M3** | 4 | Para asegurar conector SO-239 | [AliExpress](https://s.click.aliexpress.com/e/_c4D0TBqB) |
 | **Terminal de Tierra** | 1 | Tipo tornillo 3mm para conexión de blindaje coaxial | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=999208192&cPath=1162) |

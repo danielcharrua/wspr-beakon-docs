@@ -97,20 +97,20 @@ The most basic version is powered from the USB connector of the ESP32 module and
 |-----------|-----|-------|------|
 | **Main PCB** | 1 | Gerber file provided for manufacturing | [Download](https://github.com/danielcharrua/wspr-beakon/tree/main/pcb) |
 | **ESP32 Dev Kit C V4** | 1 | 38 pins, Type C | [AliExpress](https://es.aliexpress.com/item/1005007820190456.html) |
-| **Si5351 RF Module** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005006233803174.html) |
+| **Si5351 RF Module** | 1 | | [AliExpress](https://s.click.aliexpress.com/e/_c3yxom8f) |
 | **Rotary Encoder HW-40** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005006771313967.html) |
-| **LCD Display** | 1 | 16x2 I2C | [AliExpress](https://es.aliexpress.com/item/1005006100081942.html) |
+| **LCD Display** | 1 | 16x2 I2C | [AliExpress](https://s.click.aliexpress.com/e/_c2xxfDUF) |
 | **Ceramic Capacitor** | 1 | 100nF 50V, non-critical values | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=213004009&cPath=952) |
 | **Electrolytic Capacitor** | 1 | 1000μF 25V, non-critical values | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=211004075&cPath=968) |
 | **Resistors** | 3 | 100Ω 1W | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=514310001&cPath=921) |
-| **Dupont Cables** | 9 | Female-female, for LCD and encoder | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
-| **4-pin Female Socket** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **7-pin Female Socket** | 1 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **19-pin Female Socket** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
+| **Dupont Cables** | 9 | Female-female, for LCD and encoder | [AliExpress](https://s.click.aliexpress.com/e/_c4obbQdv) |
+| **4-pin Female Socket** | 2 | | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
+| **7-pin Female Socket** | 1 | | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
+| **19-pin Female Socket** | 2 | | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
 | **4-pin Male Header** | 3 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **5-pin Male Header** | 1 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
-| **Metal Standoffs** | 7 | M2.5 x 11mm female-female | [AliExpress](https://es.aliexpress.com/item/1005001478301407.html) |
-| **Screws** | 14 | M2.5 x 5mm | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
+| **Metal Standoffs** | 7 | M2.5 x 11mm female-female | [AliExpress](https://s.click.aliexpress.com/e/_c3LPABFt) |
+| **Screws** | 14 | M2.5 x 5mm | [AliExpress](https://s.click.aliexpress.com/e/_c2wg9gsr) |
 | **Filter PCB** | As needed | PCB has 10 units to cut, minimum 1 needed | [Download](https://github.com/danielcharrua/wspr-beakon/tree/main/pcb) |
 | **Filter Inductors** | As needed | Axial, according to band choice | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=999208848&cPath=1335) |
 | **Filter Capacitors** | As needed | According to band choice | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=213004001&cPath=952) |
@@ -153,9 +153,9 @@ With this upgrade we provide the capability to not depend on a WiFi network for 
 | Component | Qty | Notes | Link |
 |-----------|-----|-------|------|
 | **GPS Module NEO-7M** | 1 | With integrated antenna and SMA connector for external antenna | [AliExpress](https://es.aliexpress.com/item/1005006152967959.html) |
-| **5-pin Female Socket** | 1 | For the new GPS module | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
-| **Metal Standoffs** | 2 | M2.5 x 11mm female-female, for securing main board to case and RF module board over main board | [AliExpress](https://es.aliexpress.com/item/1005001478301407.html) |
-| **Screws** | 4 | M2.5 x 5mm for metal standoffs | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
+| **5-pin Female Socket** | 1 | For the new GPS module | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
+| **Metal Standoffs** | 2 | M2.5 x 11mm female-female, for securing main board to case and RF module board over main board | [AliExpress](https://s.click.aliexpress.com/e/_c4bcMydt) |
+| **Screws** | 4 | M2.5 x 5mm for metal standoffs | [AliExpress](https://s.click.aliexpress.com/e/_c2wg9gsr) |
 
 ## Enhancement 2: 12V Power Supply
 
@@ -196,8 +196,8 @@ With this upgrade we provide the capability to power the circuit at 12 (or 13.8)
 |-----------|-----|-------|------|
 | **Diode 1N5819** | 1 | Schottky diode for power supply protection | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=71-1N5819&cPath=970) |
 | **Buck DC-DC Converter** | 1 | DC-DC 5V output converter | [AliExpress](https://es.aliexpress.com/item/1005008678729834.html) |
-| **Dupont Cables** | 2 | With female end for 12V input wiring to main board | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
-| **4-pin Female Sockets** | 2 | | [AliExpress](https://es.aliexpress.com/item/1005001418544370.html) |
+| **Dupont Cables** | 2 | With female end for 12V input wiring to main board | [AliExpress](https://s.click.aliexpress.com/e/_c4MZVEVv) |
+| **4-pin Female Sockets** | 2 | | [AliExpress](https://s.click.aliexpress.com/e/_c4BEv1G7) |
 | **1-pin Male Headers** | 4 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **2-pin Male Header Strip** | 1 | Cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 
@@ -234,10 +234,10 @@ To enable this enhancement, we must have previously implemented enhancement numb
 
 | Component | Qty | Notes | Link |
 |-----------|-----|-------|------|
-| **UDN2981 IC** | 1 | 8-channel driver integrated circuit | [AliExpress](https://es.aliexpress.com/item/1005006888538620.html) |
+| **UDN2981 IC** | 1 | 8-channel driver integrated circuit | [AliExpress](https://s.click.aliexpress.com/e/_c4U5yebz) |
 | **18-pin IC Socket** | 1 | For the UDN2981 integrated circuit | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=999127304&cPath=1380) |
-| **Dupont Cables** | 8 | With female end for wiring outputs to external relays | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
-| **Extra Ground Dupont Cables** | 4 | Optional, with female end for ground connections to external peripherals | [AliExpress](https://es.aliexpress.com/item/1005006263457745.html) |
+| **Dupont Cables** | 8 | With female end for wiring outputs to external relays | [AliExpress](https://s.click.aliexpress.com/e/_c4MZVEVv) |
+| **Extra Ground Dupont Cables** | 4 | Optional, with female end for ground connections to external peripherals | [AliExpress](https://s.click.aliexpress.com/e/_c4MZVEVv) |
 | **8-pin Male Header Strip** | 1 | For relay outputs, cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 | **4-pin Male Header Strip** | 1 | Optional, for common ground connection to external peripherals, cut to size | [AliExpress](https://es.aliexpress.com/item/1005006034877497.html) |
 
@@ -309,9 +309,9 @@ A custom 3D printed enclosure is available for the basic WSPR Beakon core system
 |-----------|-----|-------|------|
 | **3D Printed Case** | 1 | STL files available for download | [Download](https://github.com/danielcharrua/wspr-beakon/tree/main/3D) |
 | **Threaded Inserts M2.5** | 13 | 5mm length, for melting into plastic | [AliExpress](https://es.aliexpress.com/item/1005007653131713.html) |
-| **SO-239 Connector** | 1 | 4-hole panel mount type | [AliExpress](https://es.aliexpress.com/item/1005004896899844.html) |
-| **Coaxial Cable** | 1 | RG316 or similar, 10-15cm length for internal RF connection | [AliExpress](https://es.aliexpress.com/item/1005003618138960.html) |
-| **M2.5 x 5mm Screws** | 13 | For use with threaded inserts | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
-| **M3 x 8mm Screws** | 4 | For SO-239 connector mounting | [AliExpress](https://es.aliexpress.com/item/1005006674754845.html) |
-| **M3 Nuts** | 4 | For SO-239 connector securing | [AliExpress](https://es.aliexpress.com/item/1005006470779106.html) |
+| **SO-239 Connector** | 1 | 4-hole panel mount type | [AliExpress](https://s.click.aliexpress.com/e/_c3DAbdXp) |
+| **Coaxial Cable** | 1 | RG316 or similar, 10-15cm length for internal RF connection | [AliExpress](https://s.click.aliexpress.com/e/_c3FMqGOx) |
+| **M2.5 x 5mm Screws** | 13 | For use with threaded inserts | [AliExpress](https://s.click.aliexpress.com/e/_c2wg9gsr) |
+| **M3 x 8mm Screws** | 4 | For SO-239 connector mounting | [AliExpress](https://s.click.aliexpress.com/e/_c2wg9gsr) |
+| **M3 Nuts** | 4 | For SO-239 connector securing | [AliExpress](https://s.click.aliexpress.com/e/_c4D0TBqB) |
 | **Ground Terminal** | 1 | 3mm screw type for coaxial shield connection | [Cetronic](https://www.cetronic.es/sqlcommerce/disenos/plantilla1/seccion/producto/DetalleProducto.jsp?idIdioma=&idTienda=93&codProducto=999208192&cPath=1162) |
