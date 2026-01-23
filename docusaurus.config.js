@@ -203,9 +203,11 @@ const config = {
         dataAutoTrack: true, // Optional, defaults to true
         dataDoNotTrack: false, // Optional, defaults to false
         dataCache: false, // Optional, defaults to false
-        dataDomains: "danielcharrua.github.io", // Optional, comma separated list of domains
+        dataDomains: "", // Optional, comma separated list of domains, *Recommended*
         dataExcludeSearch: false, // Optional, defaults to false
         dataExcludeHash: false, // Optional, defaults to false
+        dataTag: "", // Optional
+        dataBeforeSend: "beforeSendHandler", // Optional
       }),
     ],
   ],
