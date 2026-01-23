@@ -190,7 +190,25 @@ const config = {
       },
     }),
 
-  plugins: [require.resolve('docusaurus-plugin-image-zoom')],
+  plugins: [
+    require.resolve('docusaurus-plugin-image-zoom'),
+    [
+      "@dipakparmar/docusaurus-plugin-umami",
+      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+      ({
+        websiteID: "12fa2c90-5908-4f2f-a8ee-269d62fb2418", // Required
+        analyticsDomain: "s-analytics.charrua.es", // Required
+        scriptName: "script.js", // Optional, defaults to script.js
+        dataHostURL: "https://s-analytics.charrua.es", // Required - URL of your Umami instance
+        dataAutoTrack: true, // Optional, defaults to true
+        dataDoNotTrack: false, // Optional, defaults to false
+        dataCache: false, // Optional, defaults to false
+        dataDomains: "danielcharrua.github.io", // Optional, comma separated list of domains
+        dataExcludeSearch: false, // Optional, defaults to false
+        dataExcludeHash: false, // Optional, defaults to false
+      }),
+    ],
+  ],
 
 };
 
